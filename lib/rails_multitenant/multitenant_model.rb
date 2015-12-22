@@ -1,41 +1,41 @@
 module RailsMultitenant
   module MultitenantModel
     extend ActiveSupport::Concern
-
+=begin
     included do
       belongs_to :organization
       validates_presence_of :organization_id
       scope :from_current_org, -> { where(organization_id: Organization.current_id) }
       default_scope { from_current_org }
     end
+=end
+
+    included do
+      class << self
+        attr_accessor :context_entity_id_field
+      end
+    end
 
     module ClassMethods
 
-      def strip_organization_scope
-        unscope(where: :organization_id)
-      end
+      def multitenant_model_on(context_entity)
+        @context_entity_id_field = "#{context_entity}_id"
+        scope_sym = "from_current_#{context_entity}".to_sym
 
-      def validates_organization_uniqueness_of(*attr_names)
-        options = attr_names.extract_options!.symbolize_keys
-        existing_scope = Array.wrap(options.delete(:scope))
-        scope = existing_scope | [:organization_id]
-        validates_uniqueness_of(*attr_names, options.merge(scope: scope))
-      end
-
-      def multitenant_recurse_destroy
-        query = strip_organization_scope
-        query.uniq.pluck(:organization_id).each do |org_id|
-          # We'll set the current org and also filter the association. This way
-          # associations will properly be destroyed and the association will
-          # properly be filtered.
-          Organization.as_current_id(org_id) do
-            recurse_destroy(query.where(organization_id: org_id).pluck(:id))
-          end
+        belongs_to context_entity
+        validates_presence_of context_entity_id_field
+        scope scope_sym, -> { where(context_entity_id_field => context_entity.to_s.classify.constantize.current_id) }
+        default_scope { send(scope_sym) }
+        define_method "strip_#{context_entity}_scope" do
+          unscope(where: context_entity_id_field)
         end
       end
 
-      def entity_counts_for_organizations(organization_ids)
-        strip_organization_scope.where(organization_id: organization_ids).group(:organization_id).pluck(:organization_id, 'count(*)').to_h
+      def validates_multitenant_uniqueness_of(*attr_names)
+        options = attr_names.extract_options!.symbolize_keys
+        existing_scope = Array.wrap(options.delete(:scope))
+        scope = existing_scope | [ context_entity_id_field ]
+        validates_uniqueness_of(*attr_names, options.merge(scope: scope))
       end
 
     end

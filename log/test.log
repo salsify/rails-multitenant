@@ -87,3 +87,789 @@ D, [2015-12-22T10:41:25.305385 #2497] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbe
 D, [2015-12-22T10:41:25.305463 #2497] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
 D, [2015-12-22T10:41:25.305545 #2497] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
 D, [2015-12-22T10:41:25.305697 #2497] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.511868 #28315] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.512006 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.512145 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.512763 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.513272 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.513359 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.513444 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.514757 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.515308 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.515400 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.515494 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.515658 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.516116 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.516210 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.516320 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.516474 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.516754 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.516851 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.516933 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.517073 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.517332 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.517414 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.517497 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.517624 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.518048 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.518139 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.518239 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.518392 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.518644 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.518740 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.518822 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.518969 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.519251 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.519334 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.519423 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.519576 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.519984 #28315] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.520069 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.520177 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.520340 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T11:02:45.520765 #28315] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.520850 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T11:02:45.520937 #28315] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T11:02:45.521109 #28315] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T16:45:36.638483 #54339] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:45:36.638908 #54339] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+D, [2015-12-22T16:45:36.651455 #54339] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:45:36.651661 #54339] DEBUG -- :   [1m[35m (0.1ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:45:36.653432 #54339] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:45:36.653798 #54339] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:45:36.654042 #54339] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:46:21.121150 #54358] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:46:21.121596 #54358] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:46:21.134100 #54358] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:46:21.134314 #54358] DEBUG -- :   [1m[35m (0.1ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:46:21.134674 #54358] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:46:21.134820 #54358] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:46:21.134941 #54358] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:48:21.731073 #54381] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:48:21.731485 #54381] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:48:21.743676 #54381] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:48:21.743842 #54381] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:48:21.744140 #54381] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:48:21.744263 #54381] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:48:21.744368 #54381] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:49:26.178040 #54407] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:49:26.178492 #54407] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:49:26.190474 #54407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:49:26.190679 #54407] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:49:26.190970 #54407] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:49:26.191096 #54407] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:49:26.191220 #54407] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:50:13.562022 #54424] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:50:13.562457 #54424] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:50:13.574357 #54424] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:50:13.574523 #54424] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:50:13.574825 #54424] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:50:13.574949 #54424] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:50:13.575053 #54424] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:51:05.757896 #54454] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:51:05.758312 #54454] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:51:05.770433 #54454] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:51:05.770626 #54454] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:51:05.770910 #54454] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:51:05.771055 #54454] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:51:05.771163 #54454] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:52:12.236318 #54472] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:52:12.236755 #54472] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:52:12.248610 #54472] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:52:12.248774 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:52:12.249065 #54472] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:52:12.249189 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:52:12.249294 #54472] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:52:12.340707 #54472] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T16:52:12.340862 #54472] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T16:52:12.340979 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T16:52:12.341077 #54472] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T16:52:12.341184 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T16:52:12.341271 #54472] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T16:52:12.341663 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:52:12.341744 #54472] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T16:52:12.341883 #54472] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:52:12.342592 #54472] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T16:52:47.877929 #54492] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:52:47.878388 #54492] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:52:47.890774 #54492] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:52:47.890946 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:52:47.891251 #54492] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:52:47.891372 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:52:47.891479 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:52:47.978211 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T16:52:47.978355 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T16:52:47.978455 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T16:52:47.978565 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T16:52:47.978655 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T16:52:47.978745 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T16:52:47.979120 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:52:47.979221 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T16:52:47.979319 #54492] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:52:47.980404 #54492] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T16:54:33.968500 #54512] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:54:33.968972 #54512] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:54:33.981045 #54512] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:54:33.981212 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:54:33.981508 #54512] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:54:33.981637 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:54:33.981762 #54512] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:54:34.065814 #54512] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T16:54:34.066039 #54512] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T16:54:34.066153 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T16:54:34.066241 #54512] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T16:54:34.066342 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T16:54:34.066431 #54512] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T16:54:34.066912 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:54:34.067004 #54512] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T16:54:34.067106 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:54:34.073005 #54512] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T16:54:34.085374 #54512] DEBUG -- :   [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+D, [2015-12-22T16:54:34.086235 #54512] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" IS NULL[0m
+D, [2015-12-22T16:54:34.088190 #54512] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T16:58:24.014206 #54575] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:58:24.014663 #54575] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:58:24.026877 #54575] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:58:24.027051 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:58:24.027383 #54575] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:58:24.027520 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:58:24.027642 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:58:24.117851 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T16:58:24.117999 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T16:58:24.118096 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T16:58:24.118188 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T16:58:24.118338 #54575] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T16:58:24.118427 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T16:58:24.118832 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:58:24.118915 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T16:58:24.119007 #54575] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:58:24.119546 #54575] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T16:58:40.896343 #54593] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T16:58:40.896752 #54593] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T16:58:40.908617 #54593] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T16:58:40.908780 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T16:58:40.909087 #54593] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T16:58:40.909207 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T16:58:40.909312 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T16:58:40.999758 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T16:58:40.999895 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T16:58:40.999989 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T16:58:41.000063 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T16:58:41.000163 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T16:58:41.000301 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T16:58:41.000659 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:58:41.000752 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T16:58:41.000836 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T16:58:41.002941 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T16:58:41.005786 #54593] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T16:58:41.006040 #54593] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T16:58:41.010517 #54593] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T16:58:41.011162 #54593] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T16:58:41.011412 #54593] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T16:58:41.012106 #54593] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ?[0m  [["organization_id", 1]]
+D, [2015-12-22T16:58:41.014733 #54593] DEBUG -- :   [1m[35m (1.3ms)[0m  rollback transaction
+D, [2015-12-22T17:00:48.518843 #54612] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:00:48.519355 #54612] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:00:48.531678 #54612] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:00:48.531875 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:00:48.532232 #54612] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:00:48.532387 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:00:48.532537 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:00:48.621079 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:00:48.621226 #54612] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:00:48.621339 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:00:48.621421 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:00:48.621524 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:00:48.621611 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:00:48.621999 #54612] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:00:48.622080 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:00:48.622170 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:00:48.624519 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:00:48.627430 #54612] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:00:48.627708 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:00:48.627985 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:00:48.628319 #54612] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:00:48.628539 #54612] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:00:48.628754 #54612] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:00:48.629107 #54612] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:00:48.629189 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:00:48.629287 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:00:48.629480 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:00:48.629837 #54612] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:00:48.629999 #54612] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:00:48.634467 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:00:48.635072 #54612] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:00:48.635301 #54612] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:00:48.636078 #54612] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ?[0m  [["organization_id", 1]]
+D, [2015-12-22T17:00:48.637764 #54612] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:01:59.096139 #54630] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:01:59.096596 #54630] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:01:59.108728 #54630] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:01:59.108895 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:01:59.109196 #54630] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:01:59.109319 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:01:59.109426 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:01:59.196477 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:01:59.196634 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:01:59.196725 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:01:59.196804 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:01:59.196905 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:01:59.196985 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:01:59.197349 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:01:59.197428 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:01:59.197538 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:01:59.199757 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.202540 #54630] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:01:59.202808 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.203103 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.203454 #54630] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:01:59.203608 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.203798 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:01:59.204184 #54630] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:01:59.204282 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:01:59.204374 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:01:59.204635 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.205017 #54630] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:01:59.205180 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.209675 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.210268 #54630] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:01:59.210477 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.211125 #54630] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ?[0m  [["organization_id", 1]]
+D, [2015-12-22T17:01:59.212482 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:01:59.212799 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:01:59.212880 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:01:59.212962 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:01:59.213231 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.213649 #54630] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:01:59.213830 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:01:59.214043 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.214324 #54630] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:01:59.214524 #54630] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:01:59.214689 #54630] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:02:22.305003 #54643] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:02:22.305480 #54643] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:02:22.318415 #54643] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:02:22.318583 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:02:22.318903 #54643] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:02:22.319025 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:02:22.319132 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:02:22.420722 #54643] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:02:22.420904 #54643] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:02:22.421044 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:02:22.421140 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:02:22.421259 #54643] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:02:22.421363 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:02:22.421871 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:02:22.421969 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:02:22.422076 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:02:22.424496 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.427491 #54643] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:02:22.427801 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.432140 #54643] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.432741 #54643] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:02:22.432954 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.433179 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.433479 #54643] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:02:22.433653 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.433839 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:02:22.434208 #54643] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:02:22.434287 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:02:22.434371 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:02:22.434554 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.434891 #54643] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:02:22.435078 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.435620 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.436022 #54643] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:02:22.436212 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.436427 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.436710 #54643] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:02:22.436868 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.437041 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:02:22.437451 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:02:22.437544 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:02:22.437629 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:02:22.437843 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.438188 #54643] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:02:22.438365 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.438892 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.439277 #54643] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:02:22.439469 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:02:22.439680 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.439971 #54643] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:02:22.440133 #54643] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:02:22.440287 #54643] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.242093 #54680] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:03:30.242574 #54680] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:03:30.254801 #54680] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:03:30.254965 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:03:30.255268 #54680] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:03:30.255388 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:03:30.255493 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:03:30.346695 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:03:30.346839 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:03:30.346951 #54680] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:03:30.347027 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:03:30.347135 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:03:30.347217 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:03:30.347724 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.347807 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.347895 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.350361 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.353281 #54680] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.353572 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.354171 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.354508 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.354587 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:30.354684 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.354890 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.355263 #54680] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:30.355424 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.355641 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:30.355931 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.356046 #54680] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.356130 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.356305 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.356680 #54680] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.356841 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.357129 #54680] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.357663 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.357752 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:30.357839 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.358043 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.358423 #54680] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:30.358590 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.358811 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:30.359263 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.359363 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.359453 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.359650 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.359994 #54680] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.360181 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.360370 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.360843 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.360927 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:30.361011 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.361207 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.361545 #54680] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:30.361723 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.363138 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:30.363651 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.363738 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.363823 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.364036 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.364407 #54680] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.364621 #54680] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.364857 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.365232 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.365327 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:30.365424 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.365647 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.366044 #54680] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:30.366220 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.366413 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:30.366720 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.366803 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.366887 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.367076 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.367405 #54680] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.367564 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.367750 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:30.368189 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.368273 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:30.368372 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:30.368559 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.368902 #54680] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:30.369063 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:30.369250 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:30.369697 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.369783 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:30.369884 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:30.370082 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.370448 #54680] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:30.370615 #54680] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:30.370797 #54680] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:35.095743 #54693] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:03:35.096214 #54693] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:03:35.108247 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:03:35.108446 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:03:35.108798 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:03:35.108988 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:03:35.109155 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:03:35.199787 #54693] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:03:35.199962 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:03:35.200079 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:03:35.200188 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:03:35.200288 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:03:35.200379 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:03:35.200792 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:35.200903 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:35.201006 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:35.203473 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.206323 #54693] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:35.206614 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.211795 #54693] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.212813 #54693] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:03:35.213207 #54693] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.213600 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.214124 #54693] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:03:35.214367 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.214577 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:03:35.214965 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:35.215062 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:03:35.215167 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:03:35.215387 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.215758 #54693] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:03:35.215934 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.216528 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.216987 #54693] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:03:35.217216 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.217430 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.217785 #54693] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:03:35.217963 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.218148 #54693] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:03:35.218548 #54693] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:03:35.218649 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:03:35.218742 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:03:35.218937 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.219304 #54693] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:03:35.219480 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.220074 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.220532 #54693] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:03:35.220735 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:03:35.220960 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.221337 #54693] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:03:35.221542 #54693] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:03:35.221717 #54693] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:05:53.738500 #54715] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:05:53.739402 #54715] DEBUG -- :   [1m[35m (0.2ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:05:53.758177 #54715] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:05:53.758571 #54715] DEBUG -- :   [1m[35m (0.1ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:05:53.759028 #54715] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:05:53.759216 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:05:53.759347 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:05:53.850627 #54715] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:05:53.850774 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:05:53.850895 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:05:53.850978 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:05:53.851069 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:05:53.851176 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:05:53.851566 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.851670 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:05:53.851768 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.854426 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.857420 #54715] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:05:53.857714 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.862792 #54715] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.863700 #54715] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:05:53.864041 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.864429 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.864921 #54715] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:05:53.865240 #54715] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.865829 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.866285 #54715] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:05:53.866539 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.867112 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.867522 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:05:53.867727 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.868734 #54715] DEBUG -- :   [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."organization_id" = ?  [["organization_id", 1]]
+D, [2015-12-22T17:05:53.870699 #54715] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:05:53.871230 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.871329 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:05:53.871427 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.871733 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.872211 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:05:53.872448 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.873106 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.873568 #54715] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:05:53.873777 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.874024 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.874328 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:05:53.874504 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.875017 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.875376 #54715] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:05:53.875564 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.875999 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.876339 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:05:53.876523 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.877023 #54715] DEBUG -- :   [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."organization_id" = ? AND "items"."id" = ?  [["organization_id", 1], ["id", 2]]
+D, [2015-12-22T17:05:53.877201 #54715] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:05:53.877554 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.877637 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:05:53.877735 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:05:53.877980 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.878404 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:05:53.878607 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.879213 #54715] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.879589 #54715] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:05:53.879891 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.880125 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.880457 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "org2"]]
+D, [2015-12-22T17:05:53.880653 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.881191 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.881578 #54715] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:05:53.881786 #54715] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:05:53.882297 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.882694 #54715] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:05:53.882960 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:05:53.883507 #54715] DEBUG -- :   [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."organization_id" = ?  [["organization_id", 2]]
+D, [2015-12-22T17:05:53.883774 #54715] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.283687 #54731] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:06:38.284128 #54731] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:06:38.296758 #54731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:06:38.296929 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:06:38.297228 #54731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:06:38.297356 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:06:38.297470 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:06:38.385128 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:06:38.385276 #54731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:06:38.385376 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:06:38.385458 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:06:38.385546 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:06:38.385649 #54731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:06:38.386137 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.386239 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.386335 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.388639 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.391619 #54731] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.391907 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.392537 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:38.392911 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.393032 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:38.393135 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.393387 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.393836 #54731] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:38.394022 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.394247 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.394550 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.394636 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.394735 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.394914 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.395241 #54731] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.395408 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.395610 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:38.396072 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.396159 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:38.396257 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.396450 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.396835 #54731] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:38.397043 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.397281 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.397803 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.397900 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.398001 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.398194 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.398546 #54731] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.398707 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.398921 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:38.399426 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.399520 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:38.399607 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.399813 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.400175 #54731] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:38.400336 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.401639 #54731] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.402125 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.402215 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.402306 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.402542 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.402945 #54731] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.403148 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.403379 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:38.403872 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.403969 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:38.404060 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.404256 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.404621 #54731] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:38.404807 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.405010 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.405309 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.405396 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.405492 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.405702 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.406049 #54731] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.406218 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.406422 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:38.406733 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.406819 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:38.406907 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:38.407111 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.407449 #54731] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:38.407631 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:38.407837 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:38.408251 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.408332 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:38.408430 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:38.408623 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.409010 #54731] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:38.409214 #54731] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:38.409416 #54731] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.658850 #54742] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "organizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) [0m
+D, [2015-12-22T17:06:41.659363 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "organization_id" integer) 
+D, [2015-12-22T17:06:41.673557 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-12-22T17:06:41.673745 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  select sqlite_version(*)
+D, [2015-12-22T17:06:41.674073 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-12-22T17:06:41.674245 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+D, [2015-12-22T17:06:41.674389 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+D, [2015-12-22T17:06:41.781789 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM "organizations";
+D, [2015-12-22T17:06:41.781933 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2015-12-22T17:06:41.782026 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  DELETE FROM sqlite_sequence where name = 'organizations';
+D, [2015-12-22T17:06:41.782101 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM "items";[0m
+D, [2015-12-22T17:06:41.782183 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2015-12-22T17:06:41.782288 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'items';[0m
+D, [2015-12-22T17:06:41.782767 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.782875 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.782968 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.785276 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.788251 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.788536 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.789112 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.789558 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.789644 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.789728 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.789974 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.790370 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.790541 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.791888 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:41.792398 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.792562 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.792734 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.793169 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.793741 #54742] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.794029 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.794297 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.794956 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.795065 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.795155 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.795361 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.795764 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.795930 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.796169 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:41.796707 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.796802 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.796889 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.797103 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.797532 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.797711 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.797921 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.798445 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.798536 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.798627 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.798847 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.799228 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.799440 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.799730 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:41.800270 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.800361 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.800448 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.800737 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.801352 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.801648 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.802047 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.802413 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.802497 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.802612 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.802799 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.803170 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.803342 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.803570 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:41.803917 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.804005 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.804093 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.804287 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.804658 #54742] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.804880 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.805115 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.805623 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.805715 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.805835 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.806039 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.806428 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.806618 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.806871 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+D, [2015-12-22T17:06:41.807314 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.807422 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+D, [2015-12-22T17:06:41.807512 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2015-12-22T17:06:41.807714 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.808083 #54742] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "organizations" ("name") VALUES (?)  [["name", "test org"]]
+D, [2015-12-22T17:06:41.808257 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.808496 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.808975 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.809083 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.809173 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.809368 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.809804 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.809977 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.814599 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.815474 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:06:41.815751 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.816018 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.816388 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:06:41.816566 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.817136 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.817558 #54742] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:06:41.817766 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.818250 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.818684 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:06:41.818956 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.819911 #54742] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ? AND "items"."id" = ?[0m  [["organization_id", 2], ["id", 1]]
+D, [2015-12-22T17:06:41.821534 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.822151 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.822306 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.822463 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.822872 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.823546 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.823913 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.825105 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.826091 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:06:41.826483 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.826968 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.828081 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:06:41.828567 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.830161 #54742] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.831086 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:06:41.831399 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.832178 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.832785 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:06:41.833075 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.833843 #54742] DEBUG -- :   [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ? AND "items"."id" = ?[0m  [["organization_id", 1], ["id", 2]]
+D, [2015-12-22T17:06:41.834079 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.834538 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.834700 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.834848 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.838417 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.838937 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.839149 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.839776 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.840257 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:06:41.840475 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.840720 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.841059 #54742] DEBUG -- :   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:06:41.841249 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.841805 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.842221 #54742] DEBUG -- :   [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:06:41.842429 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.842935 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.843400 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:06:41.843646 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.844359 #54742] DEBUG -- :   [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ?[0m  [["organization_id", 2]]
+D, [2015-12-22T17:06:41.845332 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
+D, [2015-12-22T17:06:41.845801 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.845906 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  commit transaction
+D, [2015-12-22T17:06:41.846006 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+D, [2015-12-22T17:06:41.846311 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.846837 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "test org"]]
+D, [2015-12-22T17:06:41.847115 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.847860 #54742] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.848454 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 1], ["name", "item1"]]
+D, [2015-12-22T17:06:41.848796 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.849100 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.849545 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "organizations" ("name") VALUES (?)[0m  [["name", "org2"]]
+D, [2015-12-22T17:06:41.849759 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.850427 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.850953 #54742] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("organization_id", "name") VALUES (?, ?)  [["organization_id", 2], ["name", "item2"]]
+D, [2015-12-22T17:06:41.851204 #54742] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+D, [2015-12-22T17:06:41.851808 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.852270 #54742] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("organization_id", "name") VALUES (?, ?)[0m  [["organization_id", 2], ["name", "item3"]]
+D, [2015-12-22T17:06:41.852482 #54742] DEBUG -- :   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+D, [2015-12-22T17:06:41.853028 #54742] DEBUG -- :   [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."organization_id" = ?[0m  [["organization_id", 1]]
+D, [2015-12-22T17:06:41.853316 #54742] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
