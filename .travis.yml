@@ -1,0 +1,10 @@
+language: ruby
+sudo: false
+env:
+  - RAILS_VERSION="~> 3.2.22"
+  - RAILS_VERSION="~> 4.0.13"
+  - RAILS_VERSION="~> 4.1.13"
+  - RAILS_VERSION="~> 4.2.4"
+rvm:
+  - 2.2.3
+before_install: gem install bundler -v 1.10.6
