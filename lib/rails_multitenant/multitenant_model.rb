@@ -1,14 +1,6 @@
 module RailsMultitenant
   module MultitenantModel
     extend ActiveSupport::Concern
-=begin
-    included do
-      belongs_to :organization
-      validates_presence_of :organization_id
-      scope :from_current_org, -> { where(organization_id: Organization.current_id) }
-      default_scope { from_current_org }
-    end
-=end
 
     included do
       class << self

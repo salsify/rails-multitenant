@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Pat Breault"]
   spec.email         = ["pbreault@salsify.com"]
   spec.summary       = %q{Automatically configures multiple tenants in a Rails environment}
-  spec.description   = %q{Automatically configures multiple tenants in a Rails environment}
+  spec.description   = %q{Handles multiple tenants in a Rails environment}
   spec.homepage      = "https://github.com/salsify/rails_multitenant"
   spec.license       = 'MIT'
 
@@ -18,7 +18,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "rake", "~> 10.0"
 
   spec.add_dependency 'activerecord', ENV.fetch('RAILS_VERSION', ['>= 3.2', '< 4.3'])
   spec.add_dependency 'activesupport', ENV.fetch('RAILS_VERSION', ['>= 3.2', '< 4.3'])
