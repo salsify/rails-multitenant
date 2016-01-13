@@ -39,7 +39,7 @@ module RailsMultitenant
 
         def current_registry_obj
           key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.downcase}_obj".to_sym
+          "#{key_class.name.underscore}_obj".to_sym
         end
       end
 
@@ -103,12 +103,12 @@ module RailsMultitenant
 
         def current_instance_registry_id
           key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.downcase}_id".to_sym
+          "#{key_class.name.underscore}_id".to_sym
         end
 
         def current_instance_registry_obj
           key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.downcase}_obj".to_sym
+          "#{key_class.name.underscore}_obj".to_sym
         end
 
         include RegistryDependentOn
@@ -132,6 +132,7 @@ module RailsMultitenant
     def set(symbol, value)
       globals[symbol] = value
     end
+    alias_method :[]=, :set
 
     # delete this global
     def delete(symbol)
@@ -152,6 +153,7 @@ module RailsMultitenant
     def get(symbol)
       globals[symbol]
     end
+    alias_method :[], :get
 
     # Duplicate the registry
     def duplicate_registry
