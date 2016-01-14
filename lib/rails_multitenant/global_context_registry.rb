@@ -162,14 +162,15 @@ module RailsMultitenant
       end
     end
 
-    # Run a block of code with an empty registry
-    def with_isolated_registry
+    # Run a block of code with an the given registry
+    def with_registry(registry = {})
       prior_globals = globals
-      self.globals = {}
+      self.globals = registry
       yield
     ensure
       self.globals = prior_globals
     end
+    alias_method :with_isolated_registry, :with_registry
 
     # Prefer .with_isolated_registry to the following two methods.
     # Note: these methods are intended for use in a manner like .with_isolated_registry,

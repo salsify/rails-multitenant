@@ -1,13 +1,10 @@
 # encoding: UTF-8
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(version: 0) do
 
-  create_table(:organizations, force: true) do |t|
-    t.string :name
-  end
+  create_table(:organizations, force: true)
 
   create_table(:items, force: true) do |t|
-    t.string :name
     t.integer :organization_id
   end
 

@@ -32,6 +32,14 @@ describe GlobalContextRegistry do
     end
   end
 
+  describe '.with_registry' do
+    specify do
+      GlobalContextRegistry.with_registry(foo: 'updated') do
+        expect(GlobalContextRegistry.get(:foo)).to eq 'updated'
+      end
+    end
+  end
+
   describe '.with_isolated_registry' do
     specify do
       GlobalContextRegistry.with_isolated_registry do

@@ -1,4 +1,5 @@
 require 'spec_helper'
+include RailsMultitenant
 
 describe ExternalItem do
 
@@ -25,12 +26,8 @@ describe ExternalItem do
     end
   end
 
-  def as_external_org(id)
-    old_id = RailsMultitenant::GlobalContextRegistry[:external_organization_id]
-    RailsMultitenant::GlobalContextRegistry[:external_organization_id] = id
-    yield
-  ensure
-    RailsMultitenant::GlobalContextRegistry[:external_organization_id] = old_id
+  def as_external_org(id, &block)
+    GlobalContextRegistry.with_registry(external_organization_id: id, &block)
   end
 
 end

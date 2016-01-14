@@ -40,7 +40,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.start
     RailsMultitenant::GlobalContextRegistry.new_registry
-    org = Organization.create(name: 'test org')
+    org = Organization.create!
     RSpec.configuration.test_org_id = org.id
     Organization.current_id = RSpec.configuration.test_org_id
   end

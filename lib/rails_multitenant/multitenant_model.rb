@@ -17,8 +17,12 @@ module RailsMultitenant
         context_entity = context_entity_id_field.to_s.gsub(/_id$/, '')
         scope_sym = "from_current_#{context_entity}".to_sym
 
-        scope scope_sym, -> { where(context_entity_id_field => GlobalContextRegistry[context_entity_id_field]) }
+        scope scope_sym, -> do
+          where(context_entity_id_field => GlobalContextRegistry[context_entity_id_field])
+        end
+
         default_scope { send(scope_sym) }
+
         define_method "strip_#{context_entity}_scope" do
           unscope(where: context_entity_id_field)
         end
