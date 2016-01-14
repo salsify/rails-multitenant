@@ -15,6 +15,16 @@ describe GlobalContextRegistry do
     end
   end
 
+  describe '.[] and .[]=' do
+    before do
+      GlobalContextRegistry[:boo] = 'baz'
+    end
+
+    specify do
+      expect(GlobalContextRegistry[:boo]).to eq 'baz'
+    end
+  end
+
   describe '.delete' do
     specify do
       expect(GlobalContextRegistry.delete(:foo)).to eq 'bar'
@@ -26,6 +36,12 @@ describe GlobalContextRegistry do
     specify do
       GlobalContextRegistry.with_isolated_registry do
         expect(GlobalContextRegistry.get(:foo)).to be_nil
+      end
+    end
+
+    specify do
+      GlobalContextRegistry.with_isolated_registry(foo: 'updated') do
+        expect(GlobalContextRegistry.get(:foo)).to eq 'updated'
       end
     end
   end

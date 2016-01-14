@@ -6,11 +6,11 @@ require 'spec_helper'
 
 describe Item do
 
-  let!(:item1) { Item.create(name: 'item1') }
+  let!(:item1) { Item.create! }
 
-  let!(:org2) { Organization.create(name: 'org2') }
-  let!(:item2) { org2.as_current { Item.create(name: 'item2') } }
-  let!(:item3) { org2.as_current { Item.create(name: 'item3') } }
+  let!(:org2) { Organization.create! }
+  let!(:item2) { org2.as_current { Item.create! } }
+  let!(:item3) { org2.as_current { Item.create! } }
 
   specify 'default org should have one item' do
     expect(Item.all).to eq [ item1 ]
