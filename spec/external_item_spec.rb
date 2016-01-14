@@ -27,7 +27,7 @@ describe ExternalItem do
   end
 
   def as_external_org(id, &block)
-    GlobalContextRegistry.with_registry(external_organization_id: id, &block)
+    GlobalContextRegistry.with_isolated_registry(external_organization_id: id, &block)
   end
 
 end

@@ -30,8 +30,6 @@ require 'db/schema'
 RSpec.configure do |config|
   config.order = 'random'
 
-  config.add_setting :test_org_id
-
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end
@@ -40,9 +38,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.start
     RailsMultitenant::GlobalContextRegistry.new_registry
-    org = Organization.create!
-    RSpec.configuration.test_org_id = org.id
-    Organization.current_id = RSpec.configuration.test_org_id
+    Organization.current_id = Organization.create!.id
   end
 
   config.after(:each) do
