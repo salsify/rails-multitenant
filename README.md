@@ -1,8 +1,7 @@
 # RailsMultitenant
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_multitenant`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+rails_multitenant is a gem for isolating ActiveRecord models from different tenants. The gem assumes tables storing
+multi-tenant models include an appropriate tenant id column.
 
 ## Installation
 
@@ -22,7 +21,73 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The gem supports two multi-tenancy strategies:
+
+1. Based on a model attribute, typically a foreign key to an entity owned by another service
+2. Based on a model association
+
+The gem uses ActiveRecord default scopes to make isolating tenants fairly transparent. 
+
+### Multi-tenancy Based on Model Attributes
+
+The following model is multi-tenant based on an `organization_id` attribute:
+
+```ruby
+class Product < ActiveRecord::Base
+  include RailsMultitenant::MultitenantModel
+
+  multitenant_on :organization_id
+end
+```
+
+The model can then be used as follows:
+
+```ruby
+RailsMultitenant::GlobalContextRegistry[:organization_id] = 'my-org'
+
+# Only returns products from 'my-org'
+Product.all
+
+# Returns products across all orgs
+Product.strip_organization_scope.all
+
+# Or set the current organization in block form
+RailsMultitenant::GlobalContextRegistry.with_isolated_registry(organization_id: 'my-org') do
+  # Only returns products from 'my-org'
+  Product.all
+end
+```
+
+### Multi-tenancy Based on Associated Models
+
+The following model is multi-tenant based on an `Organization` model:
+
+```ruby
+class Product < ActiveRecord::Base
+  include RailsMultitenant::MultitenantModel
+
+  multitenant_on_model :organization
+end
+```
+
+The model can then be used as follows:
+
+```ruby
+Organization.current_id = 1
+
+# Only returns products from organization 1
+Product.all
+
+# Use the automatically generated belongs_to association to get
+# a product's organization
+Product.first.organization
+
+# Or set the current organization in block form
+Organization.as_current_id(1) do
+  # Only returns products from organization 1
+  Product.all
+end
+```
 
 ## Development
 
@@ -32,5 +97,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rails_multitenant. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/salsify/rails_multitenant. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
