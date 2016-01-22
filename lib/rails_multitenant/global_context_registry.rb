@@ -164,8 +164,7 @@ module RailsMultitenant
 
     # Run a block of code with an the given registry
     def with_isolated_registry(registry = {})
-      prior_globals = globals
-      self.globals = registry
+      prior_globals = new_registry(registry)
       yield
     ensure
       self.globals = prior_globals
@@ -175,10 +174,10 @@ module RailsMultitenant
     # Note: these methods are intended for use in a manner like .with_isolated_registry,
     # but in contexts where around semantics are not allowed.
 
-    # Set a new, empty registry, returning the previous one.
-    def new_registry
+    # Set a new, by default empty registry, returning the previous one.
+    def new_registry(registry = {})
       priors = globals
-      self.globals = {}
+      self.globals = registry
       priors
     end
 
