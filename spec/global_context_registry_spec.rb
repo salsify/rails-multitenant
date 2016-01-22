@@ -50,7 +50,7 @@ describe GlobalContextRegistry do
     let!(:old_registry) { GlobalContextRegistry.new_registry }
 
     specify do
-      expect(old_registry).to eq ({ foo: 'bar' })
+      expect(old_registry).to eq({ foo: 'bar' })
     end
     specify do
       expect(GlobalContextRegistry.get(:foo)).to be_nil
@@ -58,6 +58,20 @@ describe GlobalContextRegistry do
     specify do
       GlobalContextRegistry.replace_registry(old_registry)
       expect(GlobalContextRegistry.get(:foo)).to eq 'bar'
+    end
+
+    context 'when a new registry is specified' do
+      let!(:old_registry) { GlobalContextRegistry.new_registry(bar: 'foo') }
+
+      specify do
+        expect(old_registry).to eq({ foo: 'bar' })
+      end
+      specify do
+        expect(GlobalContextRegistry.get(:foo)).to be_nil
+      end
+      specify do
+        expect(GlobalContextRegistry.get(:bar)).to eq 'foo'
+      end
     end
   end
 

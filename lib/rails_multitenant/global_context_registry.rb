@@ -175,10 +175,10 @@ module RailsMultitenant
     # Note: these methods are intended for use in a manner like .with_isolated_registry,
     # but in contexts where around semantics are not allowed.
 
-    # Set a new, empty registry, returning the previous one.
-    def new_registry
+    # Set a new, by default empty registry, returning the previous one.
+    def new_registry(registry = {})
       priors = globals
-      self.globals = {}
+      self.globals = registry
       priors
     end
 
