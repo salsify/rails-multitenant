@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.3.1 (unreleased)
+* Fix strip_<entity>_scope
+
 ### 0.3.0
 * Modify `RailsMultitenant::GlobalContextRegistry#new_registry` to accept an arg
   specifying the new registry to set. The previous registry is still returned.

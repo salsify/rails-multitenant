@@ -26,6 +26,10 @@ describe ExternalItem do
     end
   end
 
+  it 'allows the organization scope to be removed' do
+    expect(ExternalItem.strip_external_organization_scope.count).to eq 3
+  end
+
   def as_external_org(id, &block)
     GlobalContextRegistry.with_isolated_registry(external_organization_id: id, &block)
   end
