@@ -23,7 +23,7 @@ module RailsMultitenant
 
         default_scope { send(scope_sym) }
 
-        define_method "strip_#{context_entity}_scope" do
+        scope "strip_#{context_entity}_scope", -> do
           unscope(where: context_entity_id_field)
         end
       end
