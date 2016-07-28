@@ -1,6 +1,9 @@
 # Changelog
 
-### 0.3.1 (unreleased)
+### 0.3.2 (unreleased)
+* Fix be_multitenant_on matcher to handle models that don't include the `RailsMultitenant::MultitenantModel` module.
+
+### 0.3.1
 * Fix strip_<entity>_scope
 
 ### 0.3.0
