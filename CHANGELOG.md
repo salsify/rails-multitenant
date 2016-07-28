@@ -1,8 +1,9 @@
 # Changelog
 
-### 0.3.2 (unreleased)
+### 0.4.0
 * Fix be_multitenant_on matcher to handle models that don't include the `RailsMultitenant::MultitenantModel` module.
 * Fix `context_entity_id_field` to work with inheritance.
+* Drop Rails 3.2 and 4.0 support since `unscope` doesn't work propertly with default scopes.
 
 ### 0.3.1
 * Fix strip_<entity>_scope
