@@ -3,9 +3,7 @@ module RailsMultitenant
     extend ActiveSupport::Concern
 
     included do
-      class << self
-        attr_accessor :context_entity_id_field
-      end
+      class_attribute :context_entity_id_field
     end
 
     module ClassMethods
