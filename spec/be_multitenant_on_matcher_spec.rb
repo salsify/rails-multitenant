@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'rails_multitenant/rspec'
 
 describe "be_multitenant_on matcher" do
@@ -8,5 +7,9 @@ describe "be_multitenant_on matcher" do
 
   it "rejects an invalid context field id" do
     expect(ExternalItem).not_to be_multitenant_on(:other_field)
+  end
+
+  it "rejects classes that don't have a context field id" do
+    expect(String).not_to be_multitenant_on(:other_field)
   end
 end

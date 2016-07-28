@@ -2,8 +2,6 @@
 # Create an item in each
 # Make sure you can only see one org's item in one org
 
-require 'spec_helper'
-
 describe Item do
 
   let!(:item1) { Item.create! }
