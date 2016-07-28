@@ -6,6 +6,7 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table(:items, force: true) do |t|
     t.integer :organization_id
+    t.string :type
   end
 
   create_table(:external_items, force: true) do |t|
@@ -20,6 +21,10 @@ end
 class Item < ActiveRecord::Base
   include RailsMultitenant::MultitenantModel
   multitenant_on_model :organization
+end
+
+class ItemSubtype < Item
+
 end
 
 class ExternalItem < ActiveRecord::Base

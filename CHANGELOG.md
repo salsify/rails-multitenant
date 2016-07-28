@@ -2,6 +2,7 @@
 
 ### 0.3.2 (unreleased)
 * Fix be_multitenant_on matcher to handle models that don't include the `RailsMultitenant::MultitenantModel` module.
+* Fix `context_entity_id_field` to work with inheritance.
 
 ### 0.3.1
 * Fix strip_<entity>_scope
