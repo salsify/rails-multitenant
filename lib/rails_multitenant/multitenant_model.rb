@@ -8,9 +8,9 @@ module RailsMultitenant
 
     module ClassMethods
 
-      def multitenant_on(context_entity_id_field)
+      def multitenant_on(context_entity_id_field, required: true)
         self.context_entity_id_field = context_entity_id_field
-        validates_presence_of context_entity_id_field
+        validates_presence_of(context_entity_id_field) if required
 
         context_entity = context_entity_id_field.to_s.gsub(/_id$/, '')
         scope_sym = "from_current_#{context_entity}".to_sym
@@ -26,9 +26,17 @@ module RailsMultitenant
         end
       end
 
-      def multitenant_on_model(context_entity)
-        multitenant_on("#{context_entity}_id".to_sym)
-        belongs_to context_entity
+      def multitenant_on_model(context_entity, required: true)
+        multitenant_on("#{context_entity}_id".to_sym, required: required)
+        
+        if ActiveRecord::VERSION::MAJOR < 5
+          belongs_to(context_entity)
+        else
+          # Rails 5 added required validation to belongs_to associations and
+          # an `optional` setting to disable it. We already do validation on
+          # the foreign key so we always disable the native Rails validation.
+          belongs_to(context_entity, optional: true)
+        end
       end
 
       def validates_multitenant_uniqueness_of(*attr_names)
