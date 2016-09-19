@@ -11,6 +11,11 @@ SimpleCov.start do
  add_filter 'spec'
 end
 
+require 'active_record'
+if ActiveRecord::VERSION::MAJOR >= 5
+  ActiveRecord::Base.belongs_to_required_by_default = true
+end
+
 require 'logger'
 require 'database_cleaner'
 require 'rails_multitenant'

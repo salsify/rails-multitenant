@@ -58,6 +58,9 @@ RailsMultitenant::GlobalContextRegistry.with_isolated_registry(organization_id: 
 end
 ```
 
+By default this adds an ActiveRecord validation to ensure the multi-tenant attribute is present but this can be disabled
+by passing `required: false` to `multitenant_on`.
+
 ### Multi-tenancy Based on Associated Models
 
 The following model is multi-tenant based on an `Organization` model:
@@ -88,6 +91,9 @@ Organization.as_current_id(1) do
   Product.all
 end
 ```
+
+By default this adds an ActiveRecord validation to ensure the tenant model is present but this can be disabled
+by passing `required: false` to `multitenant_on_model`.
 
 ## Development
 
