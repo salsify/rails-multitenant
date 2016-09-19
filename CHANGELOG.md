@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.5.0
+* Add `required` option to `multitenant_on` and `multitenant_on_model`.
+
 ### 0.4.0
 * Fix be_multitenant_on matcher to handle models that don't include the `RailsMultitenant::MultitenantModel` module.
 * Fix `context_entity_id_field` to work with inheritance.
