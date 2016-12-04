@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.5.1
+* Fix incorrect Rails version dependency in rubygems.org.
+
 ### 0.5.0
 * Add `required` option to `multitenant_on` and `multitenant_on_model`.
 
