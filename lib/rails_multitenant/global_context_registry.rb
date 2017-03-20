@@ -102,15 +102,18 @@ module RailsMultitenant
         end
 
         def current_instance_registry_id
+          return @current_instance_registry_id if @current_instance_registry_id
+
           key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.underscore}_id".to_sym
+          @current_instance_registry_id = "#{key_class.name.underscore}_id".to_sym
         end
 
         def current_instance_registry_obj
-          key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.underscore}_obj".to_sym
-        end
+          return @current_instance_registry_obj if @current_instance_registry_obj
 
+          key_class = respond_to?(:base_class) ? base_class : self
+          @current_instance_registry_obj = "#{key_class.name.underscore}_obj".to_sym
+        end
         include RegistryDependentOn
       end
 
