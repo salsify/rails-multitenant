@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.5.2
+* Optimize `CurrentInstance.current` / `CurrentInstance.current_id` / `CurrentInstance.current=` 
+  / `CurrentInstance.current_id=`.
+
 ### 0.5.1
 * Fix incorrect Rails version dependency in rubygems.org.
 
