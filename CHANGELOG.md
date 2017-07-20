@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.6.0
+* Rails 5.1 support.
+
 ### 0.5.2
 * Optimize `CurrentInstance.current` / `CurrentInstance.current_id` / `CurrentInstance.current=` 
   / `CurrentInstance.current_id=`.
