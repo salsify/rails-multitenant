@@ -21,7 +21,7 @@ Or install it yourself as:
 
 If you're using Rails, there's nothing else you need to do.
 
-Otherwise, you need to insert `RailsMultitenant::Middleware` into your middleware stack
+Otherwise, you need to insert `RailsMultitenant::Middleware::IsolatedContextRegistry` into your middleware stack
 
 ## Usage
 
