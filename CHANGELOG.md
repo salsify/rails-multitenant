@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.0
+* Add Rack middleware to create a new isolated registry per request.
+
 ### 0.6.0
 * Rails 5.1 support.
 
