@@ -19,6 +19,10 @@ Or install it yourself as:
 
     $ gem install rails_multitenant
 
+If you're using Rails, there's nothing else you need to do.
+
+Otherwise, you need to insert `RailsMultitenant::Middleware` into your middleware stack
+
 ## Usage
 
 The gem supports two multi-tenancy strategies:
@@ -26,7 +30,7 @@ The gem supports two multi-tenancy strategies:
 1. Based on a model attribute, typically a foreign key to an entity owned by another service
 2. Based on a model association
 
-The gem uses ActiveRecord default scopes to make isolating tenants fairly transparent. 
+The gem uses ActiveRecord default scopes to make isolating tenants fairly transparent.
 
 ### Multi-tenancy Based on Model Attributes
 
