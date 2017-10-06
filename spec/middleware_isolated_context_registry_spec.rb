@@ -1,4 +1,4 @@
-describe Middleware do
+describe Middleware::IsolatedContextRegistry do
   let(:payload) { [200, {'Content-Type' => 'text/plain'}, ['OK']] }
   let(:app) { lambda { |env| env[2] = GlobalContextRegistry.get(:foo); env } }
   let(:middleware) { described_class.new(app) }
