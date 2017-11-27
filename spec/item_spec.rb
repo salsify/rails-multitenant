@@ -30,4 +30,18 @@ describe Item do
     end
   end
 
+  describe '.as_current' do
+    it 'returns the correct items with an org supplied' do
+      Organization.as_current(org2) do
+        expect(Item.all).to eq [ item2, item3]
+      end
+    end
+
+    it 'allows a nil org to be supplied' do
+      Organization.as_current(nil) do
+        expect(Item.all).to eq []
+      end
+    end
+  end
+
 end

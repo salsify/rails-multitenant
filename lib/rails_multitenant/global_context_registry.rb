@@ -91,6 +91,10 @@ module RailsMultitenant
           self.current_id = old_id
         end
 
+        def as_current(model, &block)
+          as_current_id(model&.id, &block)
+        end
+
         def clear_current!
           GlobalContextRegistry.delete(current_instance_registry_obj)
         end
