@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.1
+* Added as_current multi-tenant class method.
+
 ### 0.7.0
 * Add Rack middleware to create a new isolated registry per request.
 
