@@ -91,8 +91,12 @@ module RailsMultitenant
           self.current_id = old_id
         end
 
-        def as_current(model, &block)
-          as_current_id(model&.id, &block)
+        def as_current(model)
+          old_model = current
+          self.current = model
+          yield
+        ensure
+          self.current = old_model
         end
 
         def clear_current!
