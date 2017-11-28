@@ -42,6 +42,11 @@ describe Item do
         expect(Item.all).to eq []
       end
     end
+
+    it 'rejects models of the wrong type' do
+      model = Item.new
+      expect { Organization.as_current(model) {}}.to raise_error("#{model} is not a Organization")
+    end
   end
 
 end

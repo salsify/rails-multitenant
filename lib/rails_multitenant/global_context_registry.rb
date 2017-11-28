@@ -60,6 +60,7 @@ module RailsMultitenant
         end
 
         def current=(object)
+          raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
           GlobalContextRegistry.set(current_instance_registry_obj, object)
           GlobalContextRegistry.set(current_instance_registry_id, object.try(:id))
           __clear_dependents!
