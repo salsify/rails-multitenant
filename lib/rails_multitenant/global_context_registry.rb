@@ -107,7 +107,8 @@ module RailsMultitenant
         private
 
         def __clear_dependents!
-          GlobalContextRegistry.send(:dependencies_for, self).each(&:clear_current!)
+          key_class = respond_to?(:base_class) ? base_class : self
+          GlobalContextRegistry.send(:dependencies_for, key_class).each(&:clear_current!)
         end
 
         def current_instance_registry_id
