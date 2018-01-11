@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.2
+* Fix bug that prevents clearing dependents of classes derived from CurrentInstance.  
+
 ### 0.7.1
 * Added as_current multi-tenant class method.
 

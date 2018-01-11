@@ -4,6 +4,8 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table(:organizations, force: true)
 
+  create_table(:dependent_models, force: true)
+
   create_table(:items, force: true) do |t|
     t.integer :organization_id
     t.string :type
@@ -25,6 +27,11 @@ end
 
 class Organization < ActiveRecord::Base
   include RailsMultitenant::GlobalContextRegistry::CurrentInstance
+end
+
+class DependentModel < ActiveRecord::Base
+  include RailsMultitenant::GlobalContextRegistry::CurrentInstance
+  global_context_dependent_on Organization
 end
 
 class Item < ActiveRecord::Base
