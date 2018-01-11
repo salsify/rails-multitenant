@@ -59,18 +59,18 @@ describe Item do
 
     it 'invalidates dependent models' do
       DependentModel.current = DependentModel.create!
-      dependent_id = DependentModel.current.object_id
+      dependent = DependentModel.current
 
       SubOrganization.create!.as_current do
-        expect(DependentModel.current.object_id).not_to eq(dependent_id)
+        expect(DependentModel.current).not_to equal(dependent)
       end
     end
 
     it 'invalidates dependent objects' do
-      dependent_id = DependentClass.current.object_id
+      dependent = DependentClass.current
 
       SubOrganization.create!.as_current do
-        expect(DependentClass.current.object_id).not_to eq(dependent_id)
+        expect(DependentClass.current).not_to equal(dependent)
       end
     end
   end
