@@ -9,8 +9,6 @@ module RailsMultitenant
 
     extend self
 
-    INTEGER_CLASS = 0.class == Integer ? Integer : Fixnum
-    
     module RegistryDependentOn
 
       # Is this class dependent on changes in another GlobalContextRegistry-
@@ -173,7 +171,7 @@ module RailsMultitenant
     # Duplicate the registry
     def duplicate_registry
       globals.each_with_object({}) do |(key, value), result|
-        result[key] = (value.nil? || value.is_a?(INTEGER_CLASS)) ? value : value.dup
+        result[key] = (value.nil? || value.is_a?(Integer)) ? value : value.dup
       end
     end
 
