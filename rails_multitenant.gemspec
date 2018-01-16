@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = Dir.glob('spec/**/*')
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = '>= 2.4.0'
+
   spec.add_development_dependency "bundler", "~> 1.10"
 
   spec.add_dependency 'activerecord', ENV.fetch('RAILS_VERSION', ['>= 4.1', '< 5.2'])

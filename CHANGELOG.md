@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.8.0
+* Switch usage of Fixnum to Integer  
+
 ### 0.7.2
 * Fix bug that prevents clearing dependents of classes derived from CurrentInstance.  
 
