@@ -171,7 +171,7 @@ module RailsMultitenant
     # Duplicate the registry
     def duplicate_registry
       globals.each_with_object({}) do |(key, value), result|
-        result[key] = (value.nil? || value.is_a?(Fixnum)) ? value : value.dup
+        result[key] = (value.nil? || value.is_a?(Integer)) ? value : value.dup
       end
     end
 
@@ -224,6 +224,5 @@ module RailsMultitenant
       Thread.current[:global_context_registry] = value
       value
     end
-
   end
 end

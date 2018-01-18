@@ -2,9 +2,23 @@ language: ruby
 sudo: false
 env:
   - RAILS_VERSION="~> 4.1.16"
-  - RAILS_VERSION="~> 4.2.9"
-  - RAILS_VERSION="~> 5.0.4"
-  - RAILS_VERSION="~> 5.1.2"
+  - RAILS_VERSION="~> 4.2.10"
+  - RAILS_VERSION="~> 5.0.6"
+  - RAILS_VERSION="~> 5.1.4"
 rvm:
-  - 2.3.4
+  - 2.5.0
+  - 2.4.3
+  - 2.3.6
+  - 2.2.9
+  - 2.1.10
+matrix:
+  exclude:
+  - rvm: 2.1.10
+    env: RAILS_VERSION="~> 5.0.6"
+  - rvm: 2.1.10
+    env: RAILS_VERSION="~> 5.1.4"
+  - rvm: 2.4.3
+    env: RAILS_VERSION="~> 4.1.16"
+  - rvm: 2.5.0
+    env: RAILS_VERSION="~> 4.1.16"
 before_install: gem install bundler -v 1.15.2

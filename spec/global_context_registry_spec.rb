@@ -100,7 +100,7 @@ describe GlobalContextRegistry do
       end
     end
 
-    context 'with fixnums' do
+    context 'with integers' do
       def setup_registry
         GlobalContextRegistry.set(:bar, 5)
       end

@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.8.0
+* Switch usage of Fixnum to Integer for Ruby > 2.4 
+* Test with multiple Rubies
+
 ### 0.7.2
 * Fix bug that prevents clearing dependents of classes derived from CurrentInstance.  
 
