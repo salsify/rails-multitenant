@@ -29,6 +29,12 @@ module RailsMultitenant
           GlobalContextRegistry.fetch(current_registry_obj) { new }
         end
 
+        def current=(object)
+          raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
+          GlobalContextRegistry.set(current_registry_obj, object)
+          __clear_dependents!
+        end
+
         def clear_current!
           GlobalContextRegistry.delete(current_registry_obj)
         end
@@ -40,6 +46,11 @@ module RailsMultitenant
         def current_registry_obj
           key_class = respond_to?(:base_class) ? base_class : self
           "#{key_class.name.underscore}_obj".to_sym
+        end
+
+        def __clear_dependents!
+          key_class = respond_to?(:base_class) ? base_class : self
+          GlobalContextRegistry.send(:dependencies_for, key_class).each(&:clear_current!)
         end
       end
 
