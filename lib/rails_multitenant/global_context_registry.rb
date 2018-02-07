@@ -35,8 +35,20 @@ module RailsMultitenant
           __clear_dependents!
         end
 
+        def current?
+          GlobalContextRegistry.get(current_registry_obj).present?
+        end
+
         def clear_current!
           GlobalContextRegistry.delete(current_registry_obj)
+        end
+
+        def as_current(object)
+          old_object = current if current?
+          self.current = object
+          yield
+        ensure
+          self.current = old_object
         end
 
         include RegistryDependentOn
@@ -52,6 +64,18 @@ module RailsMultitenant
           key_class = respond_to?(:base_class) ? base_class : self
           GlobalContextRegistry.send(:dependencies_for, key_class).each(&:clear_current!)
         end
+      end
+
+      def as_current
+        old_object = self.class.current if self.class.current?
+        self.class.current = self
+        yield
+      ensure
+        self.class.current = old_object
+      end
+
+      def current?
+        self.class.current? && self.equal?(self.class.current)
       end
 
     end
