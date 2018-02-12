@@ -58,7 +58,7 @@ module RailsMultitenant
         include RegistryDependentOn
 
         def provide_default(&default_provider)
-          Thread.current[current_registry_default_provider] = default_provider
+          @default_provider = default_provider
         end
 
         private
@@ -74,11 +74,11 @@ module RailsMultitenant
         end
 
         def __current_default
-          default_provider = Thread.current[current_registry_default_provider]
-          return nil unless default_provider
-          default = default_provider.call
-          raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
-          default
+          if @default_provider
+            default = @default_provider.call
+            raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
+            default
+          end
         end
 
         def __clear_dependents!
