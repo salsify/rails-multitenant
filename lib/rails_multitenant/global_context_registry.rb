@@ -39,6 +39,10 @@ module RailsMultitenant
           GlobalContextRegistry.get(current_registry_obj).present?
         end
 
+        def current!
+          current || raise("No current #{name} set")
+        end
+
         def clear_current!
           GlobalContextRegistry.delete(current_registry_obj)
         end

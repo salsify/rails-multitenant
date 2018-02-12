@@ -22,12 +22,23 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
   end
 
   describe 'current' do
-    it 'uses default provider when supplied' do
+    it 'returns default value when supplied' do
       expect(TestClass.current.id).to eq(:default)
     end
 
-    it 'defaults to nil when no provider supplied' do
+    it 'returns nil when no default supplied' do
       expect(NoDefaultTestClass.current).to be_nil
+    end
+  end
+
+  describe 'current!' do
+    it 'returns current value when set' do
+      expect(TestClass.current.id).to eq(:default)
+    end
+
+    it 'raises an error when current not set' do
+      NoDefaultTestClass.clear_current!
+      expect { NoDefaultTestClass.current! }.to raise_error
     end
   end
 
