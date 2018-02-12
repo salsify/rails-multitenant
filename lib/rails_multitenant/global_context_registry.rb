@@ -26,7 +26,7 @@ module RailsMultitenant
 
       module ClassMethods
         def current
-          GlobalContextRegistry.fetch(current_registry_obj) { new }
+          GlobalContextRegistry.fetch(current_registry_obj) { __current_default }
         end
 
         def current=(object)
@@ -53,16 +53,36 @@ module RailsMultitenant
 
         include RegistryDependentOn
 
+        def provide_default(&default_provider)
+          Thread.current[current_registry_default_provider] = default_provider
+        end
+
         private
 
         def current_registry_obj
-          key_class = respond_to?(:base_class) ? base_class : self
-          "#{key_class.name.underscore}_obj".to_sym
+          return @current_registry_obj if @current_registry_obj
+
+          @current_registry_obj = "#{__key_class.name.underscore}_obj".to_sym
+        end
+
+        def current_registry_default_provider
+          "#{__key_class.name.underscore}_default_provider".to_sym
+        end
+
+        def __current_default
+          default_provider = Thread.current[current_registry_default_provider]
+          return nil unless default_provider
+          default = default_provider.call
+          raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
+          default
         end
 
         def __clear_dependents!
-          key_class = respond_to?(:base_class) ? base_class : self
-          GlobalContextRegistry.send(:dependencies_for, key_class).each(&:clear_current!)
+          GlobalContextRegistry.send(:dependencies_for, __key_class).each(&:clear_current!)
+        end
+
+        def __key_class
+          respond_to?(:base_class) ? base_class : self
         end
       end
 

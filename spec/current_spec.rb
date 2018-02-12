@@ -2,6 +2,7 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
 
   class TestClass
     include RailsMultitenant::GlobalContextRegistry::Current
+    provide_default { new }
 
     attr_accessor :id
 
@@ -12,12 +13,21 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
 
   class DependentClass
     include RailsMultitenant::GlobalContextRegistry::Current
+    provide_default { new }
     global_context_dependent_on TestClass
   end
 
+  class NoDefaultTestClass
+    include RailsMultitenant::GlobalContextRegistry::Current
+  end
+
   describe 'current' do
-    it 'default constructs the object' do
+    it 'uses default provider when supplied' do
       expect(TestClass.current.id).to eq(:default)
+    end
+
+    it 'defaults to nil when no provider supplied' do
+      expect(NoDefaultTestClass.current).to be_nil
     end
   end
 
