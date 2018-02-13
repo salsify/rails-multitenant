@@ -1,5 +1,11 @@
 # Changelog
 
+### 0.9.0 
+* Modify `Current.current` to return a specified default, when not already initialized, or `nil` 
+  when no default is specified.    
+* Add `Current.provide_default` to optionally specify a default value for `Current.current`.    
+* Add `Current.current=` / `Current.current?` / `Current.current!` / `Current.as_current`.
+
 ### 0.8.0
 * Switch usage of Fixnum to Integer for Ruby > 2.4 
 * Test with multiple Rubies
