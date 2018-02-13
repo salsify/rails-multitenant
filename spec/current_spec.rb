@@ -11,6 +11,9 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
     end
   end
 
+  class SubClass < TestClass
+  end
+
   class DependentClass
     include RailsMultitenant::GlobalContextRegistry::Current
     provide_default { new }
@@ -24,6 +27,7 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
   describe 'current' do
     it 'returns default value when supplied' do
       expect(TestClass.current.id).to eq(:default)
+      expect(SubClass.current.id).to eq(:default)
     end
 
     it 'returns nil when no default supplied' do

@@ -24,6 +24,10 @@ module RailsMultitenant
     module Current
       extend ActiveSupport::Concern
 
+      included do
+        class_attribute :default_provider, instance_writer: false
+      end
+
       module ClassMethods
         def current
           GlobalContextRegistry.fetch(current_registry_obj) { __current_default }
@@ -58,7 +62,7 @@ module RailsMultitenant
         include RegistryDependentOn
 
         def provide_default(provider = nil, &block)
-          @default_provider = provider ? provider.to_proc : block
+          self.default_provider = provider ? provider.to_proc : block
         end
 
         private
@@ -74,8 +78,8 @@ module RailsMultitenant
         end
 
         def __current_default
-          if @default_provider
-            default = @default_provider.call(self)
+          if self.default_provider
+            default = self.default_provider.call(self)
             raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
             default
           end
