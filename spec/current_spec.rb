@@ -2,7 +2,7 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
 
   class TestClass
     include RailsMultitenant::GlobalContextRegistry::Current
-    provide_default { new }
+    provide_default :new
 
     attr_accessor :id
 

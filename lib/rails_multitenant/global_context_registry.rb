@@ -57,8 +57,8 @@ module RailsMultitenant
 
         include RegistryDependentOn
 
-        def provide_default(&default_provider)
-          @default_provider = default_provider
+        def provide_default(provider = nil, &block)
+          @default_provider = provider ? provider.to_proc : block
         end
 
         private
@@ -75,7 +75,7 @@ module RailsMultitenant
 
         def __current_default
           if @default_provider
-            default = @default_provider.call
+            default = @default_provider.call(self)
             raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
             default
           end
