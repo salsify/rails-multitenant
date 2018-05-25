@@ -1,13 +1,16 @@
 # Changelog
 
-### 0.9.0 
-* Modify `Current.current` to return a specified default, when not already initialized, or `nil` 
+### 0.10.0
+* Rails 5.2 support.
+
+### 0.9.0
+* Modify `Current.current` to return a specified default, when not already initialized, or `nil`
   when no default is specified.    
 * Add `Current.provide_default` to optionally specify a default value for `Current.current`.    
 * Add `Current.current=` / `Current.current?` / `Current.current!` / `Current.as_current`.
 
 ### 0.8.0
-* Switch usage of Fixnum to Integer for Ruby > 2.4 
+* Switch usage of Fixnum to Integer for Ruby > 2.4
 * Test with multiple Rubies
 
 ### 0.7.2
@@ -23,7 +26,7 @@
 * Rails 5.1 support.
 
 ### 0.5.2
-* Optimize `CurrentInstance.current` / `CurrentInstance.current_id` / `CurrentInstance.current=` 
+* Optimize `CurrentInstance.current` / `CurrentInstance.current_id` / `CurrentInstance.current=`
   / `CurrentInstance.current_id=`.
 
 ### 0.5.1
@@ -45,6 +48,6 @@
   specifying the new registry to set. The previous registry is still returned.
 
 ### 0.2.0
-* Merged [PR 2](https://github.com/salsify/rails-multitenant/pull/2) which adds support for 
+* Merged [PR 2](https://github.com/salsify/rails-multitenant/pull/2) which adds support for
   multi-tenancy based on a foreign key to an external model. As part of this the `multitenant_model_on`
   method was renamed to `multitenant_on_model`.
