@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.11.0
+* Introduce `RM::GCR` abbreviation.
+
 ### 0.10.0
 * Rails 5.2 support.
 
