@@ -6,4 +6,6 @@ require "rails_multitenant/multitenant_model"
 
 require "rails_multitenant/middleware/extensions"
 
+require "rails_multitenant/abbreviations"
+
 # rails_multitenant/rspec has to be explicitly included by clients who want to use it
