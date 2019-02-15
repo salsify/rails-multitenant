@@ -99,6 +99,15 @@ end
 By default this adds an ActiveRecord validation to ensure the tenant model is present but this can be disabled
 by passing `required: false` to `multitenant_on_model`.
 
+### Abbreviations
+
+When using `rails-multitenant` in a project, it is common to need to set values in `RailsMultitenant::GlobalContextRegistry` at the rails console.
+
+This is difficult to type. Alternatively you can use `RM::GCR`. For example you might type `RM::GCR[:organization_id] = 'some value'` and it will have the same effect as the long version.
+
+We do not recommend writing `RM::GCR` in source code, since what that means will be less obvious to future readers. The abbreviation is mainly intended as a console convenience.
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake false` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
