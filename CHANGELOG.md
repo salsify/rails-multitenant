@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.11.0
+* Provide shorthands to access `RailsMultitenant::GlobalContextRegistry` methods via `RailsMultitenant`.
+  For example `RailsMultitenant[:organization_id] = 'some value'` will set that value in the registry.
+
 ### 0.10.0
 * Rails 5.2 support.
 
