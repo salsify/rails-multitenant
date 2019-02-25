@@ -1,5 +1,3 @@
-include RailsMultitenant
-
 describe "delegating to GlobalContextRegistry" do
   it "RailsMultitenant.get returns values from the GlobalContextRegistry" do
     RailsMultitenant::GlobalContextRegistry.set(:organization_id, 'Salsify Housing Authority')
