@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.12.0
+* Drop support for Ruby < 2.4 and Rails < 4.2.
+* Add support for Rails 6.
+
 ### 0.11.0
 * Provide shorthands to access `RailsMultitenant::GlobalContextRegistry` methods via `RailsMultitenant`.
   For example `RailsMultitenant[:organization_id] = 'some value'` will set that value in the registry.
