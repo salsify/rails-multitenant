@@ -10,18 +10,7 @@ rvm:
   - 2.6.3
   - 2.5.5
   - 2.4.6
-#matrix:
-#  exclude:
-#  - rvm: 2.1.10
-#    env: RAILS_VERSION="~> 5.0.7"
-#  - rvm: 2.1.10
-#    env: RAILS_VERSION="~> 5.1.6"
-#  - rvm: 2.1.10
-#    env: RAILS_VERSION="~> 5.2.0"
-#  - rvm: 2.4.4
-#    env: RAILS_VERSION="~> 4.1.16"
-#  - rvm: 2.5.1
-#    env: RAILS_VERSION="~> 4.1.16"
-#before_install:
-#  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
-#  - gem install bundler -v '< 2'
+matrix:
+  exclude:
+  - rvm: 2.4.6
+    env: RAILS_VERSION="~> 6.0.0.rc2"
