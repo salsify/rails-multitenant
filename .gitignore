@@ -12,3 +12,5 @@
 bundle
 .idea
 *.iml
+/gemfiles/*.gemfile.lock
+config

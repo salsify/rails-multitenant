@@ -42,7 +42,7 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
 
     it 'raises an error when current not set' do
       NoDefaultTestClass.clear_current!
-      expect { NoDefaultTestClass.current! }.to raise_error
+      expect { NoDefaultTestClass.current! }.to raise_error('No current NoDefaultTestClass set')
     end
   end
 

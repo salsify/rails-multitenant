@@ -17,17 +17,16 @@ Gem::Specification.new do |spec|
   spec.test_files    = Dir.glob('spec/**/*')
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 2.1.0'
+  spec.required_ruby_version = '>= 2.4.0'
 
-  spec.add_development_dependency "bundler", "~> 1.10"
+  spec.add_dependency 'activerecord', '>= 4.2', '< 6.1'
+  spec.add_dependency 'activesupport', '>= 4.2', '< 6.1'
 
-  spec.add_dependency 'activerecord', ENV.fetch('RAILS_VERSION', ['>= 4.1', '< 5.3'])
-  spec.add_dependency 'activesupport', ENV.fetch('RAILS_VERSION', ['>= 4.1', '< 5.3'])
-
+  spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'database_cleaner', '>= 1.2'
-  spec.add_development_dependency 'rake', '< 11.0'
-  spec.add_development_dependency 'rspec', '~> 2'
+  spec.add_development_dependency 'rake', '>= 12.0'
+  spec.add_development_dependency 'rspec', '~> 3.8.0'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
-  spec.add_development_dependency 'sqlite3', '~> 1.3.0'
+  spec.add_development_dependency 'sqlite3', '~> 1.4.0'
 end

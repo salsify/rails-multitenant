@@ -1,29 +1,16 @@
 language: ruby
 sudo: false
-env:
-  - RAILS_VERSION="~> 4.1.16"
-  - RAILS_VERSION="~> 4.2.10"
-  - RAILS_VERSION="~> 5.0.7"
-  - RAILS_VERSION="~> 5.1.6"
-  - RAILS_VERSION="~> 5.2.0"
+gemfile:
+  - gemfiles/rails_4.2.gemfile
+  - gemfiles/rails_5.0.gemfile
+  - gemfiles/rails_5.1.gemfile
+  - gemfiles/rails_5.2.gemfile
+  - gemfiles/rails_6.0.gemfile
 rvm:
-  - 2.5.1
-  - 2.4.4
-  - 2.3.7
-  - 2.2.10
-  - 2.1.10
+  - 2.6.3
+  - 2.5.5
+  - 2.4.6
 matrix:
   exclude:
-  - rvm: 2.1.10
-    env: RAILS_VERSION="~> 5.0.7"
-  - rvm: 2.1.10
-    env: RAILS_VERSION="~> 5.1.6"
-  - rvm: 2.1.10
-    env: RAILS_VERSION="~> 5.2.0"
-  - rvm: 2.4.4
-    env: RAILS_VERSION="~> 4.1.16"
-  - rvm: 2.5.1
-    env: RAILS_VERSION="~> 4.1.16"
-before_install:
-  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
-  - gem install bundler -v '< 2'
+  - rvm: 2.4.6
+    gemfile: gemfiles/rails_6.0.gemfile
