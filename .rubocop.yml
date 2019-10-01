@@ -3,6 +3,8 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 2.4
+  Exclude:
+    - 'gemfiles/*'
 
 Metrics/LineLength:
   Enabled: true
