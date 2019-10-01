@@ -32,16 +32,27 @@ describe RailsMultitenant::GlobalContextRegistry do
   end
 
   describe ".with_isolated_registry" do
-    specify do
+    it "yields to the provided block" do
+      expect { |b| RailsMultitenant::GlobalContextRegistry.with_isolated_registry(&b) }.to yield_control
+    end
+
+    it "does not inherit values from the current registry" do
       RailsMultitenant::GlobalContextRegistry.with_isolated_registry do
         expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
       end
     end
 
-    specify do
+    it "sets values provided as arguments" do
       RailsMultitenant::GlobalContextRegistry.with_isolated_registry(foo: 'updated') do
         expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq 'updated'
       end
+    end
+
+    it "restores the original registry after the block executes" do
+      RailsMultitenant::GlobalContextRegistry.with_isolated_registry do
+        # Do nothing
+      end
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq('bar')
     end
   end
 
@@ -109,6 +120,46 @@ describe RailsMultitenant::GlobalContextRegistry do
       specify do
         expect(dupe).to eq RailsMultitenant::GlobalContextRegistry.new_registry
       end
+    end
+  end
+
+  describe ".merge!" do
+    it "merges values into the registry" do
+      RailsMultitenant::GlobalContextRegistry.merge!(team: 'Eagles', color: 'Green')
+
+      expect(RailsMultitenant::GlobalContextRegistry[:team]).to eq('Eagles')
+      expect(RailsMultitenant::GlobalContextRegistry[:color]).to eq('Green')
+    end
+
+    it "overwrites existing values in the registry" do
+      RailsMultitenant::GlobalContextRegistry[:team] = 'Patriots'
+
+      RailsMultitenant::GlobalContextRegistry.merge!(team: 'Eagles', color: 'Green')
+
+      expect(RailsMultitenant::GlobalContextRegistry[:team]).to eq('Eagles')
+    end
+  end
+
+  describe ".with_merged_registry" do
+    it "yields to the provided block" do
+      expect { |b| RailsMultitenant::GlobalContextRegistry.with_merged_registry(foo: 'baz', &b) }.to yield_control
+    end
+
+    it "sets up a merged registry in the block" do
+      RailsMultitenant::GlobalContextRegistry[:team] = 'Patriots'
+      RailsMultitenant::GlobalContextRegistry.with_merged_registry(team: 'Eagles') do
+        expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq('bar')
+        expect(RailsMultitenant::GlobalContextRegistry.get(:team)).to eq('Eagles')
+      end
+    end
+
+    it "restores the original registry after the block executes" do
+      RailsMultitenant::GlobalContextRegistry[:team] = 'Patriots'
+      RailsMultitenant::GlobalContextRegistry.with_merged_registry(team: 'Eagles') do
+        # Do nothing
+      end
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq('bar')
+      expect(RailsMultitenant::GlobalContextRegistry.get(:team)).to eq('Patriots')
     end
   end
 end

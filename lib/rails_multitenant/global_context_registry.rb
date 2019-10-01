@@ -236,6 +236,11 @@ module RailsMultitenant
     end
     alias_method :[], :get
 
+    # merge the given values into the registry
+    def merge!(values)
+      globals.merge!(values)
+    end
+
     # Duplicate the registry
     def duplicate_registry
       globals.each_with_object({}) do |(key, value), result|
@@ -246,6 +251,14 @@ module RailsMultitenant
     # Run a block of code with an the given registry
     def with_isolated_registry(registry = {})
       prior_globals = new_registry(registry)
+      yield
+    ensure
+      self.globals = prior_globals
+    end
+
+    # Run a block of code with the given values merged into the current registry
+    def with_merged_registry(values = {})
+      prior_globals = new_registry(globals.merge(values))
       yield
     ensure
       self.globals = prior_globals
