@@ -32,16 +32,27 @@ describe GlobalContextRegistry do
   end
 
   describe '.with_isolated_registry' do
-    specify do
+    it "yields to the provided block" do
+      expect { |b| GlobalContextRegistry.with_isolated_registry(&b) }.to yield_control
+    end
+
+    it "does not inherit values from the current registry" do
       GlobalContextRegistry.with_isolated_registry do
         expect(GlobalContextRegistry.get(:foo)).to be_nil
       end
     end
 
-    specify do
+    it "sets values provided as arguments" do
       GlobalContextRegistry.with_isolated_registry(foo: 'updated') do
         expect(GlobalContextRegistry.get(:foo)).to eq 'updated'
       end
+    end
+
+    it "restores the original registry after the block executes" do
+      GlobalContextRegistry.with_isolated_registry do
+        # Do nothing
+      end
+      expect(GlobalContextRegistry.get(:foo)).to eq('bar')
     end
   end
 
@@ -108,6 +119,46 @@ describe GlobalContextRegistry do
       specify do
         expect(dupe).to eq GlobalContextRegistry.new_registry
       end
+    end
+  end
+
+  describe '.merge!' do
+    it "merges values into the registry" do
+      GlobalContextRegistry.merge!(team: 'Eagles', color: 'Green')
+
+      expect(GlobalContextRegistry[:team]).to eq('Eagles')
+      expect(GlobalContextRegistry[:color]).to eq('Green')
+    end
+
+    it "overwrites existing values in the registry" do
+      GlobalContextRegistry[:team] = 'Patriots'
+
+      GlobalContextRegistry.merge!(team: 'Eagles')
+
+      expect(GlobalContextRegistry[:team]).to eq('Eagles')
+    end
+  end
+
+  describe '.with_merged_registry' do
+    it "yields to the provided block" do
+      expect { |b| GlobalContextRegistry.with_merged_registry(foo: 'baz', &b) }.to yield_control
+    end
+
+    it "sets up a merged registry in the block" do
+      GlobalContextRegistry[:team] = 'Patriots'
+      GlobalContextRegistry.with_merged_registry(team: 'Eagles') do
+        expect(GlobalContextRegistry.get(:foo)).to eq('bar')
+        expect(GlobalContextRegistry.get(:team)).to eq('Eagles')
+      end
+    end
+
+    it "restores the original registry after the block executes" do
+      GlobalContextRegistry[:team] = 'Patriots'
+      GlobalContextRegistry.with_merged_registry(team: 'Eagles') do
+        # Do nothing
+      end
+      expect(GlobalContextRegistry.get(:foo)).to eq('bar')
+      expect(GlobalContextRegistry.get(:team)).to eq('Patriots')
     end
   end
 end
