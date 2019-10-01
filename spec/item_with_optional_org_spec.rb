@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe ItemWithOptionalOrg do
 
   let!(:item_without_org) { without_org { described_class.create! } }
@@ -21,6 +23,6 @@ describe ItemWithOptionalOrg do
   end
 
   def without_org(&block)
-    GlobalContextRegistry.with_isolated_registry(&block)
+    RailsMultitenant::GlobalContextRegistry.with_isolated_registry(&block)
   end
 end

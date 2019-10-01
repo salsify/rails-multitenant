@@ -1,0 +1,15 @@
+inherit_gem:
+  salsify_rubocop: conf/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+  IgnoreCopDirectives: true
+  IgnoredPatterns:
+    - ^#
+
+Style/FrozenStringLiteralComment:
+  Enabled: true

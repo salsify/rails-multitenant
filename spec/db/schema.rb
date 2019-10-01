@@ -1,4 +1,4 @@
-# encoding: UTF-8
+# frozen_string_literal: true
 
 ActiveRecord::Schema.define(version: 0) do
 
@@ -57,4 +57,3 @@ class ExternalItemWithOptionalOrg < ActiveRecord::Base
   include RailsMultitenant::MultitenantModel
   multitenant_on :external_organization_id, required: false
 end
-

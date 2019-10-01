@@ -1,20 +1,18 @@
-# encoding: UTF-8
+# frozen_string_literal: true
 
 require 'simplecov'
 require 'coveralls'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-  SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
-])
+                                                                 SimpleCov::Formatter::HTMLFormatter,
+                                                                 Coveralls::SimpleCov::Formatter
+                                                               ])
 SimpleCov.start do
- add_filter 'spec'
+  add_filter 'spec'
 end
 
 require 'active_record'
-if ActiveRecord::VERSION::MAJOR >= 5
-  ActiveRecord::Base.belongs_to_required_by_default = true
-end
+ActiveRecord::Base.belongs_to_required_by_default = true if ActiveRecord::VERSION::MAJOR >= 5
 
 require 'logger'
 require 'database_cleaner'
@@ -28,8 +26,8 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
 ActiveRecord::Migration.verbose = false
 
 db_adapter = ENV.fetch('ADAPTER', 'sqlite3')
-config = YAML.load(File.read('spec/db/database.yml'))
-ActiveRecord::Base.establish_connection(config[db_adapter])
+db_config = YAML.safe_load(File.read('spec/db/database.yml'))
+ActiveRecord::Base.establish_connection(db_config[db_adapter])
 require 'db/schema'
 
 RSpec.configure do |config|
@@ -39,14 +37,14 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
   end
 
-  config.before(:each) do
+  config.before do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.start
     RailsMultitenant::GlobalContextRegistry.new_registry
     Organization.current_id = Organization.create!.id
   end
 
-  config.after(:each) do
+  config.after do
     DatabaseCleaner.clean
   end
 end
