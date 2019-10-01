@@ -14,8 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/salsify/rails-multitenant'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.test_files    = Dir.glob('spec/**/*')
+  spec.files         = Dir['lib/**/*.rb', 'LICENSE.txt']
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.4.0'
