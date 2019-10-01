@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_multitenant/rspec'
 
 describe "be_multitenant_on matcher" do

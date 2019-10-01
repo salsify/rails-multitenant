@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Create multiple orgs
 # Create an item in each
 # Make sure you can only see one org's item in one org
@@ -10,21 +12,21 @@ describe Item do
   let!(:item2) { org2.as_current { Item.create! } }
   let!(:item3) { org2.as_current { Item.create! } }
 
-  specify 'default org should have one item' do
-    expect(Item.all).to eq [ item1 ]
+  specify "default org should have one item" do
+    expect(Item.all).to eq [item1]
   end
 
-  it 'does not return item2' do
+  it "does not return item2" do
     expect(Item.where(id: item2.id)).to eq []
   end
 
-  specify 'org2 should have two items' do
+  specify "org2 should have two items" do
     org2.as_current do
-      expect(Item.all).to eq [ item2, item3]
+      expect(Item.all).to eq [item2, item3]
     end
   end
 
-  it 'does not return item1' do
+  it "does not return item1" do
     org2.as_current do
       expect(Item.where(id: item1.id)).to eq []
     end
@@ -39,25 +41,25 @@ describe Item do
 
   end
 
-  describe '.as_current' do
-    it 'returns the correct items with an org supplied' do
+  describe ".as_current" do
+    it "returns the correct items with an org supplied" do
       Organization.as_current(org2) do
-        expect(Item.all).to eq [ item2, item3]
+        expect(Item.all).to eq [item2, item3]
       end
     end
 
-    it 'allows a nil org to be supplied' do
+    it "allows a nil org to be supplied" do
       Organization.as_current(nil) do
         expect(Item.all).to eq []
       end
     end
 
-    it 'rejects models of the wrong type' do
+    it "rejects models of the wrong type" do
       model = Item.new
-      expect { Organization.as_current(model) {}}.to raise_error("#{model} is not a Organization")
+      expect { Organization.as_current(model) {} }.to raise_error("#{model} is not a Organization")
     end
 
-    it 'invalidates dependent models' do
+    it "invalidates dependent models" do
       DependentModel.current = DependentModel.create!
       dependent = DependentModel.current
 
@@ -66,7 +68,7 @@ describe Item do
       end
     end
 
-    it 'invalidates dependent objects' do
+    it "invalidates dependent objects" do
       dependent = DependentClass.current
 
       SubOrganization.create!.as_current do

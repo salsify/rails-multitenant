@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 include RailsMultitenant
 
 describe GlobalContextRegistry do
@@ -8,13 +10,13 @@ describe GlobalContextRegistry do
     GlobalContextRegistry.set(:foo, 'bar')
   end
 
-  describe '.get and .set' do
+  describe ".get and .set" do
     specify do
       expect(GlobalContextRegistry.get(:foo)).to eq 'bar'
     end
   end
 
-  describe '.[] and .[]=' do
+  describe ".[] and .[]=" do
     before do
       GlobalContextRegistry[:boo] = 'baz'
     end
@@ -24,14 +26,14 @@ describe GlobalContextRegistry do
     end
   end
 
-  describe '.delete' do
+  describe ".delete" do
     specify do
       expect(GlobalContextRegistry.delete(:foo)).to eq 'bar'
       expect(GlobalContextRegistry.get(:foo)).to be_nil
     end
   end
 
-  describe '.with_isolated_registry' do
+  describe ".with_isolated_registry" do
     specify do
       GlobalContextRegistry.with_isolated_registry do
         expect(GlobalContextRegistry.get(:foo)).to be_nil
@@ -45,11 +47,11 @@ describe GlobalContextRegistry do
     end
   end
 
-  describe '.replace_registry and .new_registry' do
+  describe ".replace_registry and .new_registry" do
     let!(:old_registry) { GlobalContextRegistry.new_registry }
 
     specify do
-      expect(old_registry).to eq({ foo: 'bar' })
+      expect(old_registry).to eq(foo: 'bar')
     end
     specify do
       expect(GlobalContextRegistry.get(:foo)).to be_nil
@@ -59,11 +61,11 @@ describe GlobalContextRegistry do
       expect(GlobalContextRegistry.get(:foo)).to eq 'bar'
     end
 
-    context 'when a new registry is specified' do
+    context "when a new registry is specified" do
       let!(:old_registry) { GlobalContextRegistry.new_registry(bar: 'foo') }
 
       specify do
-        expect(old_registry).to eq({ foo: 'bar' })
+        expect(old_registry).to eq(foo: 'bar')
       end
       specify do
         expect(GlobalContextRegistry.get(:foo)).to be_nil
@@ -74,10 +76,11 @@ describe GlobalContextRegistry do
     end
   end
 
-  describe '.duplicate_registry' do
+  describe ".duplicate_registry" do
     def setup_registry; end
 
     before { setup_registry }
+
     let!(:dupe) { GlobalContextRegistry.duplicate_registry }
 
     specify do
@@ -90,7 +93,7 @@ describe GlobalContextRegistry do
       expect(GlobalContextRegistry.get(:foo).object_id).not_to eq dupe[:foo].object_id
     end
 
-    context 'with nils' do
+    context "with nils" do
       def setup_registry
         GlobalContextRegistry.set(:bar, nil)
       end
@@ -100,7 +103,7 @@ describe GlobalContextRegistry do
       end
     end
 
-    context 'with integers' do
+    context "with integers" do
       def setup_registry
         GlobalContextRegistry.set(:bar, 5)
       end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe "delegating to GlobalContextRegistry" do
   it "RailsMultitenant.get returns values from the GlobalContextRegistry" do
     RailsMultitenant::GlobalContextRegistry.set(:organization_id, 'Salsify Housing Authority')
@@ -42,7 +44,7 @@ describe "delegating to GlobalContextRegistry" do
   it "RailsMultitenant.with_isolated_registry leverages the GlobalContextRegistry" do
     RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Salsify Mainland'
 
-    RailsMultitenant.with_isolated_registry({ organization_id: 'Salsify Private Island' }) do
+    RailsMultitenant.with_isolated_registry(organization_id: 'Salsify Private Island') do
       expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify Private Island')
     end
 

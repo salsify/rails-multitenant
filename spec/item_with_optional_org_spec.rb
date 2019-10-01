@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe ItemWithOptionalOrg do
 
   let!(:item_without_org) { without_org { described_class.create! } }

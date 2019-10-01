@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RailsMultitenant
   module MultitenantModel
     extend ActiveSupport::Concern
@@ -42,7 +44,7 @@ module RailsMultitenant
       def validates_multitenant_uniqueness_of(*attr_names)
         options = attr_names.extract_options!.symbolize_keys
         existing_scope = Array.wrap(options.delete(:scope))
-        scope = existing_scope | [ context_entity_id_field ]
+        scope = existing_scope | [context_entity_id_field]
         validates_uniqueness_of(*attr_names, options.merge(scope: scope))
       end
 

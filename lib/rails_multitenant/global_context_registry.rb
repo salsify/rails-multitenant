@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Handles storing of global state that may be swapped out or unset at
 # various points. We use this in dandelion to store the current user,
 # org, catalog, etc.
@@ -35,6 +37,7 @@ module RailsMultitenant
 
         def current=(object)
           raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
+
           GlobalContextRegistry.set(current_registry_obj, object)
           __clear_dependents!
         end
@@ -78,9 +81,10 @@ module RailsMultitenant
         end
 
         def __current_default
-          if self.default_provider
-            default = self.default_provider.call(self)
+          if default_provider
+            default = default_provider.call(self)
             raise "#{default} is not a #{self}" if default.present? && !default.is_a?(self)
+
             default
           end
         end
@@ -103,7 +107,7 @@ module RailsMultitenant
       end
 
       def current?
-        self.class.current? && self.equal?(self.class.current)
+        self.class.current? && equal?(self.class.current)
       end
 
     end
@@ -124,6 +128,7 @@ module RailsMultitenant
 
         def current=(object)
           raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
+
           GlobalContextRegistry.set(current_instance_registry_obj, object)
           GlobalContextRegistry.set(current_instance_registry_id, object.try(:id))
           __clear_dependents!
@@ -234,7 +239,7 @@ module RailsMultitenant
     # Duplicate the registry
     def duplicate_registry
       globals.each_with_object({}) do |(key, value), result|
-        result[key] = (value.nil? || value.is_a?(Integer)) ? value : value.dup
+        result[key] = value.nil? || value.is_a?(Integer) ? value : value.dup
       end
     end
 
