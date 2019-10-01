@@ -48,4 +48,21 @@ describe "delegating to GlobalContextRegistry" do
 
     expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify Mainland')
   end
+
+  it "RailsMultitenant.merge! adds values to the GlobalContextRegistry" do
+    RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Not Salsify'
+
+    RailsMultitenant.merge!(organization_id: 'Salsify')
+
+    expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+  end
+
+  it "RailsMultitenant.with_merged_registry! runs the block with a merged registry" do
+    RailsMultitenant::GlobalContextRegistry[:foo] = 'bar'
+
+    RailsMultitenant.with_merged_registry(organization_id: 'Salsify') do
+      expect(RailsMultitenant::GlobalContextRegistry[:foo]).to eq('bar')
+      expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+    end
+  end
 end

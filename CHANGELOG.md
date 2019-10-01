@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.13.0
+* Add `RailsMultitenant::GlobalContextRegistry.merge!` and 
+` RailsMultitenant::GlobalContextRegistry.with_merged_registry`
+
 ### 0.12.0
 * Drop support for Ruby < 2.4 and Rails < 4.2.
 * Add support for Rails 6.
