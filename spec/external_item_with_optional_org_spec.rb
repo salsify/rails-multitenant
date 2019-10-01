@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-include RailsMultitenant
-
 describe ExternalItemWithOptionalOrg do
 
   let!(:external_item_without_org) { as_external_org(nil) { described_class.create! } }
@@ -22,6 +20,6 @@ describe ExternalItemWithOptionalOrg do
   end
 
   def as_external_org(id, &block)
-    GlobalContextRegistry.with_isolated_registry(external_organization_id: id, &block)
+    RailsMultitenant::GlobalContextRegistry.with_isolated_registry(external_organization_id: id, &block)
   end
 end

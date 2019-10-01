@@ -290,7 +290,6 @@ module RailsMultitenant
 
     def globals=(value)
       Thread.current[:global_context_registry] = value
-      value
     end
   end
 end

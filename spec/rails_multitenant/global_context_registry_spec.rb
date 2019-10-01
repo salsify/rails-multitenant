@@ -1,0 +1,114 @@
+# frozen_string_literal: true
+
+describe RailsMultitenant::GlobalContextRegistry do
+
+  before do
+    # The framework will setup the organization; clear that out
+    RailsMultitenant::GlobalContextRegistry.new_registry
+    RailsMultitenant::GlobalContextRegistry.set(:foo, 'bar')
+  end
+
+  describe ".get and .set" do
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq 'bar'
+    end
+  end
+
+  describe ".[] and .[]=" do
+    before do
+      RailsMultitenant::GlobalContextRegistry[:boo] = 'baz'
+    end
+
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry[:boo]).to eq 'baz'
+    end
+  end
+
+  describe ".delete" do
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.delete(:foo)).to eq 'bar'
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
+    end
+  end
+
+  describe ".with_isolated_registry" do
+    specify do
+      RailsMultitenant::GlobalContextRegistry.with_isolated_registry do
+        expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
+      end
+    end
+
+    specify do
+      RailsMultitenant::GlobalContextRegistry.with_isolated_registry(foo: 'updated') do
+        expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq 'updated'
+      end
+    end
+  end
+
+  describe ".replace_registry and .new_registry" do
+    let!(:old_registry) { RailsMultitenant::GlobalContextRegistry.new_registry }
+
+    specify do
+      expect(old_registry).to eq(foo: 'bar')
+    end
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
+    end
+    specify do
+      RailsMultitenant::GlobalContextRegistry.replace_registry(old_registry)
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq 'bar'
+    end
+
+    context "when a new registry is specified" do
+      let!(:old_registry) { RailsMultitenant::GlobalContextRegistry.new_registry(bar: 'foo') }
+
+      specify do
+        expect(old_registry).to eq(foo: 'bar')
+      end
+      specify do
+        expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
+      end
+      specify do
+        expect(RailsMultitenant::GlobalContextRegistry.get(:bar)).to eq 'foo'
+      end
+    end
+  end
+
+  describe ".duplicate_registry" do
+    def setup_registry; end
+
+    before { setup_registry }
+
+    let!(:dupe) { RailsMultitenant::GlobalContextRegistry.duplicate_registry }
+
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.new_registry).to eq dupe
+    end
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.new_registry.object_id).not_to eq dupe.object_id
+    end
+    specify do
+      expect(RailsMultitenant::GlobalContextRegistry.get(:foo).object_id).not_to eq dupe[:foo].object_id
+    end
+
+    context "with nils" do
+      def setup_registry
+        RailsMultitenant::GlobalContextRegistry.set(:bar, nil)
+      end
+
+      specify do
+        expect(dupe).to eq RailsMultitenant::GlobalContextRegistry.new_registry
+      end
+    end
+
+    context "with integers" do
+      def setup_registry
+        RailsMultitenant::GlobalContextRegistry.set(:bar, 5)
+      end
+
+      specify do
+        expect(dupe).to eq RailsMultitenant::GlobalContextRegistry.new_registry
+      end
+    end
+  end
+end
