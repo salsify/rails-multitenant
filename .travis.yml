@@ -1,5 +1,5 @@
 language: ruby
-# cache: bundler
+cache: bundler
 sudo: false
 gemfile:
   - gemfiles/rails_4.2.gemfile
