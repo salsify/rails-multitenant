@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 sudo: false
 gemfile:
   - gemfiles/rails_4.2.gemfile
@@ -11,7 +12,9 @@ rvm:
   - 2.5.5
   - 2.4.6
 script:
-  - bundle exec rubocop
+    # For some reason rubocop picks up the wrong default .rubocop.yml when Travis gem caching is enabled
+    # so we need to be explicit with the configuration file.
+  - bundle exec rubocop --config .rubocop.yml
   - bundle exec rspec
 matrix:
   exclude:
