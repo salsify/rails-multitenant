@@ -21,6 +21,8 @@ module RailsMultitenant
 
         def current=(object)
           raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
+          # Don't clear caches if we're setting current to the existing value
+          return if current.object_id == object.object_id
 
           GlobalContextRegistry.set(current_registry_obj, object)
           __clear_dependents!
@@ -36,6 +38,7 @@ module RailsMultitenant
 
         def clear_current!
           GlobalContextRegistry.delete(current_registry_obj)
+          __clear_dependents!
         end
 
         def as_current(object)
