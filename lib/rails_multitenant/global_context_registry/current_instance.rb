@@ -13,6 +13,8 @@ module RailsMultitenant
 
       module ClassMethods
         def current_id=(id)
+          return if current_id == id
+
           GlobalContextRegistry.delete(current_instance_registry_obj)
           GlobalContextRegistry.set(current_instance_registry_id, id)
           __clear_dependents!
@@ -20,6 +22,8 @@ module RailsMultitenant
 
         def current=(object)
           raise "#{object} is not a #{self}" if object.present? && !object.is_a?(self)
+          # Don't clear caches if we're setting current to the existing value
+          return if GlobalContextRegistry.get(current_instance_registry_obj).object_id == object.object_id
 
           GlobalContextRegistry.set(current_instance_registry_obj, object)
           GlobalContextRegistry.set(current_instance_registry_id, object.try(:id))
@@ -62,6 +66,8 @@ module RailsMultitenant
 
         def clear_current!
           GlobalContextRegistry.delete(current_instance_registry_obj)
+          GlobalContextRegistry.delete(current_instance_registry_id)
+          __clear_dependents!
         end
 
         private

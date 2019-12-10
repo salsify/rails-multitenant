@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.13.1
+- Don't reset `current`/`current_id` when setting it the current value to avoid invalidating caches.
+
 ### 0.13.0
 * Add `RailsMultitenant::GlobalContextRegistry.merge!` and 
 ` RailsMultitenant::GlobalContextRegistry.with_merged_registry`
