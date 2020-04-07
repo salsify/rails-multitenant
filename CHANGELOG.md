@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.13.1
+* Add `RailsMultitenant::GlobalContextRegistry.with_admin_scope` - queries executed within the block will skip scoping
+
 ### 0.13.0
 * Add `RailsMultitenant::GlobalContextRegistry.merge!` and 
 ` RailsMultitenant::GlobalContextRegistry.with_merged_registry`

@@ -20,6 +20,12 @@ describe Item do
     expect(Item.where(id: item2.id)).to eq []
   end
 
+  it "does return item2 when in admin mode" do
+    RailsMultitenant::GlobalContextRegistry.with_admin_registry do
+      expect(Item.where(id: item2.id)).to eq [item2]
+    end
+  end
+
   specify "org2 should have two items" do
     org2.as_current do
       expect(Item.all).to eq [item2, item3]

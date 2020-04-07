@@ -67,4 +67,15 @@ describe "delegating to GlobalContextRegistry" do
       expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
     end
   end
+
+  it "RailsMultitenant.with_admin_registry enables admin mode without removing existing context" do
+    RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Salsify'
+
+    RailsMultitenant::GlobalContextRegistry.with_admin_registry do
+      expect(RailsMultitenant::GlobalContextRegistry[:admin_registry_enabled]).to be_truthy
+      expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+    end
+
+    expect(RailsMultitenant::GlobalContextRegistry[:admin_registry_enabled]).to be_falsey
+  end
 end

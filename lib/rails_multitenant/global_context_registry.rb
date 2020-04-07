@@ -69,6 +69,15 @@ module RailsMultitenant
       self.globals = prior_globals
     end
 
+    # Run a block of code that disregards scoping during read queries
+    def with_admin_registry
+      puts globals
+      prior_globals = new_registry(globals.merge(admin_registry_enabled: true))
+      yield
+    ensure
+      self.globals = prior_globals
+    end
+
     # Prefer .with_isolated_registry to the following two methods.
     # Note: these methods are intended for use in a manner like .with_isolated_registry,
     # but in contexts where around semantics are not allowed.
