@@ -20,10 +20,18 @@ describe Item do
     expect(Item.where(id: item2.id)).to eq []
   end
 
-  it "does return item2 when in admin mode" do
+  it "behaves correctly when using an admin registry block" do
     RailsMultitenant::GlobalContextRegistry.with_admin_registry do
       expect(Item.where(id: item2.id)).to eq [item2]
     end
+    expect(Item.where(id: item2.id)).to eq []
+  end
+
+  it "behaves correctly when using admin registry without a block" do
+    RailsMultitenant::GlobalContextRegistry.enable_admin_registry
+    expect(Item.where(id: item2.id)).to eq [item2]
+    RailsMultitenant::GlobalContextRegistry.disable_admin_registry
+    expect(Item.where(id: item2.id)).to eq []
   end
 
   specify "org2 should have two items" do
