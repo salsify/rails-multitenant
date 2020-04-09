@@ -20,17 +20,17 @@ describe Item do
     expect(Item.where(id: item2.id)).to eq []
   end
 
-  it "behaves correctly when using an admin registry block" do
-    RailsMultitenant::GlobalContextRegistry.with_admin_registry do
+  it "behaves correctly when disabling scoping with a block" do
+    RailsMultitenant::GlobalContextRegistry.with_unscoped_queries do
       expect(Item.where(id: item2.id)).to eq [item2]
     end
     expect(Item.where(id: item2.id)).to eq []
   end
 
-  it "behaves correctly when using admin registry without a block" do
-    RailsMultitenant::GlobalContextRegistry.enable_admin_registry
+  it "behaves correctly when disabling and enabling scoping without a block" do
+    RailsMultitenant::GlobalContextRegistry.disable_scoped_queries
     expect(Item.where(id: item2.id)).to eq [item2]
-    RailsMultitenant::GlobalContextRegistry.disable_admin_registry
+    RailsMultitenant::GlobalContextRegistry.enable_scoped_queries
     expect(Item.where(id: item2.id)).to eq []
   end
 

@@ -18,7 +18,7 @@ module RailsMultitenant
         scope_sym = "from_current_#{context_entity}".to_sym
 
         scope scope_sym, -> do
-          unless GlobalContextRegistry[:admin_registry_enabled]
+          unless GlobalContextRegistry[:use_unscoped_queries]
             where(context_entity_id_field => GlobalContextRegistry[context_entity_id_field])
           end
         end

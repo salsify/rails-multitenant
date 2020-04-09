@@ -165,7 +165,7 @@ describe RailsMultitenant::GlobalContextRegistry do
 
   describe ".with_admin_registry" do
     it "yields to the provided block" do
-      expect { |b| RailsMultitenant::GlobalContextRegistry.with_admin_registry(&b) }.to yield_control
+      expect { |b| RailsMultitenant::GlobalContextRegistry.with_unscoped_queries(&b) }.to yield_control
     end
   end
 end
