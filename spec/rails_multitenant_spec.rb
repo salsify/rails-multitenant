@@ -79,7 +79,7 @@ describe "delegating to GlobalContextRegistry" do
     expect(RailsMultitenant::GlobalContextRegistry[:use_unscoped_queries]).to be_falsey
   end
 
-  it "RailsMultitenant.disabled_scoped_queries and RailsMultitenant.enable_scoped_queries do not impact existing context" do
+  it "RailsMultitenant.disabled_scoped_queries and enable_scoped_queries do not impact existing context" do
     RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Salsify'
 
     RailsMultitenant::GlobalContextRegistry.disable_scoped_queries
