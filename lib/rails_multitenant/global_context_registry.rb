@@ -87,9 +87,13 @@ module RailsMultitenant
 
     # Run a block of code that disregards scoping during read queries
     def with_unscoped_queries
-      with_merged_registry(use_unscoped_queries: true) do
+      with_merged_registry(__use_unscoped_queries: true) do
         yield
       end
+    end
+
+    def use_unscoped_queries?
+      self[:__use_unscoped_queries] == true
     end
 
     # Prefer .with_unscoped_queries to the following two methods.
@@ -97,11 +101,11 @@ module RailsMultitenant
     # but in contexts where around semantics are not allowed.
 
     def disable_scoped_queries
-      self[:use_unscoped_queries] = true
+      self[:__use_unscoped_queries] = true
     end
 
     def enable_scoped_queries
-      self[:use_unscoped_queries] = nil
+      self[:__use_unscoped_queries] = nil
     end
 
     private
