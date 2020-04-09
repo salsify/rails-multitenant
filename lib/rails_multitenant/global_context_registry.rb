@@ -85,6 +85,29 @@ module RailsMultitenant
       self.globals = registry
     end
 
+    # Run a block of code that disregards scoping during read queries
+    def with_unscoped_queries
+      with_merged_registry(__use_unscoped_queries: true) do
+        yield
+      end
+    end
+
+    def use_unscoped_queries?
+      self[:__use_unscoped_queries] == true
+    end
+
+    # Prefer .with_unscoped_queries to the following two methods.
+    # Note: these methods are intended for use in a manner like .with_admin_registry,
+    # but in contexts where around semantics are not allowed.
+
+    def disable_scoped_queries
+      self[:__use_unscoped_queries] = true
+    end
+
+    def enable_scoped_queries
+      self[:__use_unscoped_queries] = nil
+    end
+
     private
 
     @dependencies = {}

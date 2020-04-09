@@ -162,4 +162,10 @@ describe RailsMultitenant::GlobalContextRegistry do
       expect(RailsMultitenant::GlobalContextRegistry.get(:team)).to eq('Patriots')
     end
   end
+
+  describe ".with_unscoped_queries" do
+    it "yields to the provided block" do
+      expect { |b| RailsMultitenant::GlobalContextRegistry.with_unscoped_queries(&b) }.to yield_control
+    end
+  end
 end

@@ -20,6 +20,20 @@ describe Item do
     expect(Item.where(id: item2.id)).to eq []
   end
 
+  it "behaves correctly when disabling scoping with a block" do
+    RailsMultitenant::GlobalContextRegistry.with_unscoped_queries do
+      expect(Item.where(id: item2.id)).to eq [item2]
+    end
+    expect(Item.where(id: item2.id)).to eq []
+  end
+
+  it "behaves correctly when disabling and enabling scoping without a block" do
+    RailsMultitenant::GlobalContextRegistry.disable_scoped_queries
+    expect(Item.where(id: item2.id)).to eq [item2]
+    RailsMultitenant::GlobalContextRegistry.enable_scoped_queries
+    expect(Item.where(id: item2.id)).to eq []
+  end
+
   specify "org2 should have two items" do
     org2.as_current do
       expect(Item.all).to eq [item2, item3]

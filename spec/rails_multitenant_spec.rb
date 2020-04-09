@@ -67,4 +67,27 @@ describe "delegating to GlobalContextRegistry" do
       expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
     end
   end
+
+  it "RailsMultitenant.with_unscoped_queries does not remove existing context" do
+    RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Salsify'
+
+    RailsMultitenant::GlobalContextRegistry.with_unscoped_queries do
+      expect(RailsMultitenant::GlobalContextRegistry.use_unscoped_queries?).to eq true
+      expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+    end
+
+    expect(RailsMultitenant::GlobalContextRegistry.use_unscoped_queries?).to eq false
+  end
+
+  it "RailsMultitenant.disabled_scoped_queries and enable_scoped_queries do not impact existing context" do
+    RailsMultitenant::GlobalContextRegistry[:organization_id] = 'Salsify'
+
+    RailsMultitenant::GlobalContextRegistry.disable_scoped_queries
+    expect(RailsMultitenant::GlobalContextRegistry.use_unscoped_queries?).to eq true
+    expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+
+    RailsMultitenant::GlobalContextRegistry.enable_scoped_queries
+    expect(RailsMultitenant::GlobalContextRegistry.use_unscoped_queries?).to eq false
+    expect(RailsMultitenant::GlobalContextRegistry[:organization_id]).to eq('Salsify')
+  end
 end
