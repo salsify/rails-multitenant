@@ -98,11 +98,11 @@ module RailsMultitenant
     # Note: these methods are intended for use in a manner like .with_admin_registry,
     # but in contexts where around semantics are not allowed.
 
-    def enable_admin
+    def enable_admin_registry
       self[:admin_registry_enabled] = true
     end
 
-    def disable_admin
+    def disable_admin_registry
       self[:admin_registry_enabled] = nil
     end
 
