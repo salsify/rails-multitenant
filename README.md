@@ -1,5 +1,11 @@
 # RailsMultitenant
 
+[![Gem Version](https://badge.fury.io/rb/rails-multitenant.svg)][gem]
+[![Build Status](https://circleci.com/gh/salsify/rails-multitenant.svg?style=svg)][circleci]
+
+[gem]: https://rubygems.org/gems/rails-multitenant
+[circleci]: https://circleci.com/gh/salsify/rails-multitenant
+
 rails_multitenant is a gem for isolating ActiveRecord models from different tenants. The gem assumes tables storing
 multi-tenant models include an appropriate tenant id column.
 
