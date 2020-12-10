@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.15.0
+* Add support for Rails 6.1.
+
 ### 0.14.0
 * Add `RailsMultitenant::GlobalContextRegistry.with_unscoped_queries` - queries executed within the block will skip scoping
 * Add `RailsMultitenant::GlobalContextRegistry.disable_scoped_queries` and `RailsMultitenant::GlobalContextRegistry.enable_scoped_queries` - Methods for skipping and resuming scoping when blocks are not usable
