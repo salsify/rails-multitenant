@@ -24,7 +24,7 @@ jobs:
             - "gemfiles/vendor/bundle"
       - run:
           name: Run Rubocop
-          command: bundle exec rubocop .rubocop.yml
+          command: bundle exec rubocop --config .rubocop.yml
   test:
     parameters:
       gemfile:
