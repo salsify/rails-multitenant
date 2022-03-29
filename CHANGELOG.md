@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.16.0
+* Add support for Rails 7.0.
+
 ### 0.15.0
 * Add support for Rails 6.1.
 
