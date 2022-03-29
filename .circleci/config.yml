@@ -105,3 +105,7 @@ workflows:
                 ruby_version: "3.0.3"
               - gemfile: "gemfiles/rails_6.0.gemfile"
                 ruby_version: "3.1.1"
+              - gemfile: "gemfiles/rails_7.0.gemfile"
+                ruby_version: "2.5.8"
+              - gemfile: "gemfiles/rails_7.0.gemfile"
+                ruby_version: "2.6.6"
