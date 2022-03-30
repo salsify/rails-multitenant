@@ -87,6 +87,7 @@ module RailsMultitenant
 
     # Run a block of code that disregards scoping during read queries
     def with_unscoped_queries
+      # disabling Style/ExplicitBlockArgument for performance reasons
       with_merged_registry(__use_unscoped_queries: true) do # rubocop:disable Style/ExplicitBlockArgument
         yield
       end
