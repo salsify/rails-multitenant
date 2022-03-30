@@ -24,10 +24,10 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['lib/**/*.rb', 'LICENSE.txt']
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.4.0'
+  spec.required_ruby_version = '>= 2.7.0'
 
-  spec.add_dependency 'activerecord', '>= 4.2', '< 6.2'
-  spec.add_dependency 'activesupport', '>= 4.2', '< 6.2'
+  spec.add_dependency 'activerecord', '>= 5.2', '< 7.1'
+  spec.add_dependency 'activesupport', '>= 5.2', '< 7.1'
 
   spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'coveralls'
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '>= 12.0'
   spec.add_development_dependency 'rspec', '~> 3.8.0'
   spec.add_development_dependency 'rspec_junit_formatter'
-  spec.add_development_dependency 'salsify_rubocop', '0.63.0'
+  spec.add_development_dependency 'salsify_rubocop', '~> 1.0.1'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
   spec.add_development_dependency 'sqlite3', '~> 1.4.0'
 end
