@@ -48,8 +48,8 @@ module RailsMultitenant
 
     # Duplicate the registry
     def duplicate_registry
-      globals.each_with_object({}) do |(key, value), result|
-        result[key] = value.nil? || value.is_a?(Integer) ? value : value.dup
+      globals.transform_values do |value|
+        value.nil? || value.is_a?(Integer) ? value : value.dup
       end
     end
 
@@ -87,7 +87,7 @@ module RailsMultitenant
 
     # Run a block of code that disregards scoping during read queries
     def with_unscoped_queries
-      with_merged_registry(__use_unscoped_queries: true) do
+      with_merged_registry(__use_unscoped_queries: true) do # rubocop:disable Style/ExplicitBlockArgument
         yield
       end
     end

@@ -7,6 +7,24 @@
 describe Item do
 
   let!(:item1) { Item.create! }
+  let(:dependent_class) do
+    Class.new do
+      include RailsMultitenant::GlobalContextRegistry::Current
+      global_context_dependent_on Organization
+
+      def self.name
+        'DependentClass'
+      end
+    end
+  end
+
+  let(:sub_organization) do
+    Class.new(Organization) do
+      def self.name
+        'SubOrganization'
+      end
+    end
+  end
 
   let!(:org2) { Organization.create! }
   let!(:item2) { org2.as_current { Item.create! } }
@@ -46,15 +64,6 @@ describe Item do
     end
   end
 
-  class DependentClass
-    include RailsMultitenant::GlobalContextRegistry::Current
-    global_context_dependent_on Organization
-  end
-
-  class SubOrganization < Organization
-
-  end
-
   describe ".as_current" do
     it "returns the correct items with an org supplied" do
       Organization.as_current(org2) do
@@ -77,18 +86,18 @@ describe Item do
       DependentModel.current = DependentModel.create!
       dependent = DependentModel.current
 
-      SubOrganization.create!.as_current do
+      sub_organization.create!.as_current do
         expect(DependentModel.current).not_to equal(dependent)
       end
     end
 
     it "invalidates dependent objects" do
-      dependent = DependentClass.current
+      dependent = dependent_class.new
+      dependent_class.current = dependent
 
-      SubOrganization.create!.as_current do
-        expect(DependentClass.current).not_to equal(dependent)
+      sub_organization.create!.as_current do
+        expect(dependent_class.current).not_to equal(dependent)
       end
     end
   end
-
 end

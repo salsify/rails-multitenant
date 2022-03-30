@@ -62,9 +62,11 @@ describe RailsMultitenant::GlobalContextRegistry do
     specify do
       expect(old_registry).to eq(foo: 'bar')
     end
+
     specify do
       expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
     end
+
     specify do
       RailsMultitenant::GlobalContextRegistry.replace_registry(old_registry)
       expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to eq 'bar'
@@ -76,9 +78,11 @@ describe RailsMultitenant::GlobalContextRegistry do
       specify do
         expect(old_registry).to eq(foo: 'bar')
       end
+
       specify do
         expect(RailsMultitenant::GlobalContextRegistry.get(:foo)).to be_nil
       end
+
       specify do
         expect(RailsMultitenant::GlobalContextRegistry.get(:bar)).to eq 'foo'
       end
@@ -95,9 +99,11 @@ describe RailsMultitenant::GlobalContextRegistry do
     specify do
       expect(RailsMultitenant::GlobalContextRegistry.new_registry).to eq dupe
     end
+
     specify do
       expect(RailsMultitenant::GlobalContextRegistry.new_registry.object_id).not_to eq dupe.object_id
     end
+
     specify do
       expect(RailsMultitenant::GlobalContextRegistry.get(:foo).object_id).not_to eq dupe[:foo].object_id
     end

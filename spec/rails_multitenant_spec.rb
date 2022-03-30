@@ -28,9 +28,11 @@ describe "delegating to GlobalContextRegistry" do
   it "RailsMultitenant.fetch checks and sets the GlobalContextRegistry" do
     RailsMultitenant::GlobalContextRegistry[:organization_id] = nil
 
+    # False positive from rubocop
+    # rubocop:disable Style/RedundantFetchBlock
     expect(RailsMultitenant.fetch(:organization_id) { 'Salsify Anarchists' }).to eq('Salsify Anarchists')
-
     expect(RailsMultitenant.fetch(:organization_id) { 'Salsify Crypto Anarchists' }).to eq('Salsify Anarchists')
+    # rubocop:enable Style/RedundantFetchBlock
   end
 
   it "RailsMultitenant.delete removes from the GlobalContextRegistry" do

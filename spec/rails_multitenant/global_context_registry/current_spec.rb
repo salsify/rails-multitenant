@@ -1,39 +1,55 @@
 # frozen_string_literal: true
 
+class TestClass
+  include RailsMultitenant::GlobalContextRegistry::Current
+  provide_default :new
+
+  attr_accessor :id
+
+  def initialize(id: :default)
+    @id = id
+  end
+end
+
 describe RailsMultitenant::GlobalContextRegistry::Current do
-
-  class TestClass
-    include RailsMultitenant::GlobalContextRegistry::Current
-    provide_default :new
-
-    attr_accessor :id
-
-    def initialize(id: :default)
-      @id = id
+  let(:sub_class) do
+    Class.new(TestClass) do
+      def self.name
+        'SubClass'
+      end
     end
   end
 
-  class SubClass < TestClass
+  let(:dependent_class) do
+    Class.new do
+      include RailsMultitenant::GlobalContextRegistry::Current
+      provide_default { new }
+      global_context_dependent_on TestClass
+
+      def self.name
+        'DependentClass'
+      end
+    end
   end
 
-  class DependentClass
-    include RailsMultitenant::GlobalContextRegistry::Current
-    provide_default { new }
-    global_context_dependent_on TestClass
-  end
+  let(:no_default_test_class) do
+    Class.new do
+      include RailsMultitenant::GlobalContextRegistry::Current
 
-  class NoDefaultTestClass
-    include RailsMultitenant::GlobalContextRegistry::Current
+      def self.name
+        'NoDefaultTestClass'
+      end
+    end
   end
 
   describe "current" do
     it "returns default value when supplied" do
       expect(TestClass.current.id).to eq(:default)
-      expect(SubClass.current.id).to eq(:default)
+      expect(sub_class.current.id).to eq(:default)
     end
 
     it "returns nil when no default supplied" do
-      expect(NoDefaultTestClass.current).to be_nil
+      expect(no_default_test_class.current).to be_nil
     end
   end
 
@@ -43,8 +59,8 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
     end
 
     it "raises an error when current not set" do
-      NoDefaultTestClass.clear_current!
-      expect { NoDefaultTestClass.current! }.to raise_error('No current NoDefaultTestClass set')
+      no_default_test_class.clear_current!
+      expect { no_default_test_class.current! }.to raise_error('No current NoDefaultTestClass set')
     end
   end
 
@@ -56,9 +72,9 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
     end
 
     it "clears dependencies" do
-      dependent = DependentClass.current
+      dependent = dependent_class.current
       TestClass.current = TestClass.new
-      expect(DependentClass.current).not_to equal(dependent)
+      expect(dependent_class.current).not_to equal(dependent)
     end
   end
 
