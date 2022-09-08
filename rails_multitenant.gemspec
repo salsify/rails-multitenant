@@ -33,9 +33,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'database_cleaner', '>= 1.2'
   spec.add_development_dependency 'rake', '>= 12.0'
-  spec.add_development_dependency 'rspec', '~> 3.8.0'
+  spec.add_development_dependency 'rspec', '~> 3.11.0'
   spec.add_development_dependency 'rspec_junit_formatter'
-  spec.add_development_dependency 'salsify_rubocop', '~> 1.0.1'
+  spec.add_development_dependency 'salsify_rubocop', '~> 1.27.1'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
   spec.add_development_dependency 'sqlite3', '~> 1.4.0'
 end
