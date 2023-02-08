@@ -114,11 +114,13 @@ module RailsMultitenant
     @dependencies = {}
 
     def add_dependency(parent, dependent)
-      (@dependencies[parent] ||= []) << dependent
+      raise 'dependencies cannot be registered for anonymous classes' if parent.name.blank? || dependent.name.blank?
+
+      ((@dependencies[parent.name] ||= []) << dependent.name).tap(&:uniq!)
     end
 
     def dependencies_for(klass)
-      @dependencies[klass] || []
+      @dependencies[klass.name]&.map(&:safe_constantize)&.tap(&:compact!) || []
     end
 
     def globals

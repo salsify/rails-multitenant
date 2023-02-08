@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.18.0
+* Added better support for registry dependencies in a development environment where classes may be reloaded.
+* Added a `global_context_dependent_with` method to support registering bidirectional references.
+
 ### 0.17.0
 * Add support for Ruby 3.2.
 * Drop support for Rails 5.2.
@@ -17,7 +21,7 @@
 * Add `RailsMultitenant::GlobalContextRegistry.disable_scoped_queries` and `RailsMultitenant::GlobalContextRegistry.enable_scoped_queries` - Methods for skipping and resuming scoping when blocks are not usable
 
 ### 0.13.0
-* Add `RailsMultitenant::GlobalContextRegistry.merge!` and 
+* Add `RailsMultitenant::GlobalContextRegistry.merge!` and
 ` RailsMultitenant::GlobalContextRegistry.with_merged_registry`
 
 ### 0.12.0
@@ -33,8 +37,8 @@
 
 ### 0.9.0
 * Modify `Current.current` to return a specified default, when not already initialized, or `nil`
-  when no default is specified.    
-* Add `Current.provide_default` to optionally specify a default value for `Current.current`.    
+  when no default is specified.
+* Add `Current.provide_default` to optionally specify a default value for `Current.current`.
 * Add `Current.current=` / `Current.current?` / `Current.current!` / `Current.as_current`.
 
 ### 0.8.0
@@ -42,7 +46,7 @@
 * Test with multiple Rubies
 
 ### 0.7.2
-* Fix bug that prevents clearing dependents of classes derived from CurrentInstance.  
+* Fix bug that prevents clearing dependents of classes derived from CurrentInstance.
 
 ### 0.7.1
 * Added as_current multi-tenant class method.

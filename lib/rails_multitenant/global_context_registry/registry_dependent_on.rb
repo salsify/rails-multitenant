@@ -8,6 +8,12 @@ module RailsMultitenant
       def global_context_dependent_on(*klasses)
         klasses.each { |klass| GlobalContextRegistry.send(:add_dependency, klass, self) }
       end
+
+      # Registers a bi-directional dependency on another class.
+      def global_context_dependent_with(*klasses)
+        global_context_dependent_on(*klasses)
+        klasses.each { |klass| klass.global_context_dependent_on(self) }
+      end
     end
   end
 end
