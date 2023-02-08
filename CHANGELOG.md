@@ -1,8 +1,8 @@
 # Changelog
 
 ### 0.18.0
-* Added better support for registry dependencies in a development environment where classes may be reloaded.
-* Added a `global_context_dependent_with` method to support registering bidirectional references.
+* Add better support for registry dependencies in a development environment where classes may be reloaded.
+* Add a `global_context_dependent_with` method to support registering bidirectional references.
 
 ### 0.17.0
 * Add support for Ruby 3.2.
