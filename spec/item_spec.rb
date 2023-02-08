@@ -16,8 +16,8 @@ describe Item do
   let!(:item3) { org2.as_current { Item.create! } }
 
   before do
-    Object.const_set('DependentClass', dependent_class)
-    Object.const_set('SubOrganization', Class.new(Organization))
+    Object.const_set(:DependentClass, dependent_class)
+    Object.const_set(:SubOrganization, Class.new(Organization))
 
     DependentClass.global_context_dependent_on Organization
   end

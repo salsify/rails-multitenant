@@ -13,10 +13,10 @@ end
 
 describe RailsMultitenant::GlobalContextRegistry::Current do
   before do
-    Object.const_set('SubClass', Class.new(TestClass))
-    Object.const_set('DependentClass', dependent_class)
-    Object.const_set('BiDependentClass', bidependent_class)
-    Object.const_set('NoDefaultTestClass', no_default_test_class)
+    Object.const_set(:SubClass, Class.new(TestClass))
+    Object.const_set(:DependentClass, dependent_class)
+    Object.const_set(:BiDependentClass, bidependent_class)
+    Object.const_set(:NoDefaultTestClass, no_default_test_class)
 
     DependentClass.global_context_dependent_on TestClass
     BiDependentClass.global_context_dependent_with TestClass
