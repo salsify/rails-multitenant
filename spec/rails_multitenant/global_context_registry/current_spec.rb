@@ -13,20 +13,13 @@ end
 
 describe RailsMultitenant::GlobalContextRegistry::Current do
   before do
-    Object.const_set(:SubClass, Class.new(TestClass))
-    Object.const_set(:DependentClass, dependent_class)
-    Object.const_set(:BiDependentClass, bidependent_class)
-    Object.const_set(:NoDefaultTestClass, no_default_test_class)
+    stub_const('SubClass', Class.new(TestClass))
+    stub_const('DependentClass', dependent_class)
+    stub_const('BiDependentClass', bidependent_class)
+    stub_const('NoDefaultTestClass', no_default_test_class)
 
     DependentClass.global_context_dependent_on TestClass
-    BiDependentClass.global_context_dependent_with TestClass
-  end
-
-  after do
-    Object.send(:remove_const, :SubClass)
-    Object.send(:remove_const, :DependentClass)
-    Object.send(:remove_const, :BiDependentClass)
-    Object.send(:remove_const, :NoDefaultTestClass)
+    BiDependentClass.global_context_mutually_dependent_on TestClass
   end
 
   let(:dependent_class) do

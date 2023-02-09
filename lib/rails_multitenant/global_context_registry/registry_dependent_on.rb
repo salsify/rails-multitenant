@@ -10,7 +10,7 @@ module RailsMultitenant
       end
 
       # Registers a bi-directional dependency on another class.
-      def global_context_dependent_with(*klasses)
+      def global_context_mutually_dependent_on(*klasses)
         global_context_dependent_on(*klasses)
         klasses.each { |klass| klass.global_context_dependent_on(self) }
       end
