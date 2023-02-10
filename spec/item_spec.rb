@@ -8,27 +8,19 @@ describe Item do
 
   let!(:item1) { Item.create! }
   let(:dependent_class) do
-    Class.new do
-      include RailsMultitenant::GlobalContextRegistry::Current
-      global_context_dependent_on Organization
-
-      def self.name
-        'DependentClass'
-      end
-    end
-  end
-
-  let(:sub_organization) do
-    Class.new(Organization) do
-      def self.name
-        'SubOrganization'
-      end
-    end
+    Class.new { include RailsMultitenant::GlobalContextRegistry::Current }
   end
 
   let!(:org2) { Organization.create! }
   let!(:item2) { org2.as_current { Item.create! } }
   let!(:item3) { org2.as_current { Item.create! } }
+
+  before do
+    stub_const('DependentClass', dependent_class)
+    stub_const('SubOrganization', Class.new(Organization))
+
+    DependentClass.global_context_dependent_on Organization
+  end
 
   specify "default org should have one item" do
     expect(Item.all).to eq [item1]
@@ -86,17 +78,17 @@ describe Item do
       DependentModel.current = DependentModel.create!
       dependent = DependentModel.current
 
-      sub_organization.create!.as_current do
+      SubOrganization.create!.as_current do
         expect(DependentModel.current).not_to equal(dependent)
       end
     end
 
     it "invalidates dependent objects" do
-      dependent = dependent_class.new
-      dependent_class.current = dependent
+      dependent = DependentClass.new
+      DependentClass.current = dependent
 
-      sub_organization.create!.as_current do
-        expect(dependent_class.current).not_to equal(dependent)
+      SubOrganization.create!.as_current do
+        expect(DependentClass.current).not_to equal(dependent)
       end
     end
   end

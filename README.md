@@ -105,6 +105,62 @@ end
 By default this adds an ActiveRecord validation to ensure the tenant model is present but this can be disabled
 by passing `required: false` to `multitenant_on_model`.
 
+### `current` Models
+
+Classes can be enabled to have current, thread-local instances. For a standard class this is done with:
+
+```ruby
+class MyClass
+  include RailsMultitenant::GlobalContextRegistry::Current
+end
+
+MyClass.current = MyClass.new
+```
+
+For an `ActiveRecord` model you can use the following, which additionally allows storing the current model ID.
+
+```ruby
+class MyClass
+  include RailsMultitenant::GlobalContextRegistry::CurrentInstance
+end
+
+MyClass.current_id = 123
+MyClass.current # => #<MyClass id: 123>
+```
+
+#### Dependency Tracking
+
+For classes that are dependent on other `Current` classes you can register dependencies.
+
+```ruby
+class DependentClass
+  include RailsMultitenant::GlobalContextRegistry::Current
+  provide_default :default
+  global_context_dependent_on MyClass
+
+  def self.default
+    new(MyClass.current.dependent_id)
+  end
+
+  def initialize(id)
+    @id = id
+  end
+end
+```
+
+When doing so, clearing the `current` class on the referenced class will also clear the `current` context of the dependent class.
+
+```ruby
+klass = MyClass.new
+MyClass.current = klass
+DependentClass.current # => #<DependentClass id: klass.dependent_id>
+
+MyClass.current = nil
+DependentClass.current # => nil
+```
+
+For bi-directional dependencies you can use `#global_context_mutually_dependent_on` instead of `#global_context_dependent_on`.
+
 ### Shorthand
 
 When using `rails-multitenant` in a project, it is common to need to set values in `RailsMultitenant::GlobalContextRegistry` at the rails console.

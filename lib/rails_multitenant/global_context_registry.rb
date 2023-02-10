@@ -14,6 +14,8 @@ module RailsMultitenant
   module GlobalContextRegistry
     extend self
 
+    EMPTY_ARRAY = [].freeze
+
     # Set this global
     def set(symbol, value)
       globals[symbol] = value
@@ -114,11 +116,16 @@ module RailsMultitenant
     @dependencies = {}
 
     def add_dependency(parent, dependent)
-      (@dependencies[parent] ||= []) << dependent
+      parent = parent.respond_to?(:name) ? parent.name : parent
+      dependent = dependent.respond_to?(:name) ? dependent.name : dependent
+
+      raise 'dependencies cannot be registered for anonymous classes' if parent.blank? || dependent.blank?
+
+      ((@dependencies[parent] ||= []) << dependent).tap(&:uniq!)
     end
 
     def dependencies_for(klass)
-      @dependencies[klass] || []
+      @dependencies[klass.name]&.map(&:safe_constantize)&.tap(&:compact!) || EMPTY_ARRAY
     end
 
     def globals
