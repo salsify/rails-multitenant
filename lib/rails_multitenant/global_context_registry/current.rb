@@ -34,8 +34,9 @@ module RailsMultitenant
           current || raise("No current #{name} set")
         end
 
-        def clear_current!
+        def clear_current!(cycle_detector = Set.new)
           GlobalContextRegistry.delete(current_registry_obj)
+          __clear_dependents!(cycle_detector)
         end
 
         def as_current(object)
@@ -73,8 +74,13 @@ module RailsMultitenant
           end
         end
 
-        def __clear_dependents!
-          GlobalContextRegistry.send(:dependencies_for, __key_class).each(&:clear_current!)
+        def __clear_dependents!(cycle_detector = Set.new)
+          return if cycle_detector.include?(self)
+
+          cycle_detector << self
+          GlobalContextRegistry.send(:dependencies_for, __key_class).each do |obj|
+            obj.clear_current!(cycle_detector)
+          end
         end
 
         def __key_class
