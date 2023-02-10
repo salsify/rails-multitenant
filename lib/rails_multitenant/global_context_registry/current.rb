@@ -75,11 +75,9 @@ module RailsMultitenant
         end
 
         def __clear_dependents!(cycle_detector = Set.new)
-          return if cycle_detector.include?(self)
-
           cycle_detector << self
           GlobalContextRegistry.send(:dependencies_for, __key_class).each do |obj|
-            obj.clear_current!(cycle_detector)
+            obj.clear_current!(cycle_detector) unless cycle_detector.include?(obj)
           end
         end
 

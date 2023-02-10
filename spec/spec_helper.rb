@@ -3,6 +3,8 @@
 require 'simplecov'
 require 'coveralls'
 
+require 'pry-byebug'
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
                                                                  SimpleCov::Formatter::HTMLFormatter,
                                                                  Coveralls::SimpleCov::Formatter
