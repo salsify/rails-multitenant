@@ -60,19 +60,19 @@ module RailsMultitenant
           self.current = old_model
         end
 
-        def clear_current!(cycle_detector = Set.new)
+        def clear_current!(cleared = [])
           GlobalContextRegistry.delete(current_instance_registry_obj)
-          __clear_dependents!(cycle_detector)
+          __clear_dependents!(cleared)
         end
 
         private
 
-        def __clear_dependents!(cycle_detector = Set.new)
-          cycle_detector << self
+        def __clear_dependents!(cleared = [])
+          cleared << self
           key_class = respond_to?(:base_class) ? base_class : self
 
           GlobalContextRegistry.send(:dependencies_for, key_class).each do |obj|
-            obj.clear_current!(cycle_detector) unless cycle_detector.include?(obj)
+            obj.clear_current!(cleared) unless cleared.include?(obj)
           end
         end
 
