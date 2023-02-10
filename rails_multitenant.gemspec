@@ -38,5 +38,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'salsify_rubocop', '~> 1.27.1'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
   spec.add_development_dependency 'sqlite3', '~> 1.6.0'
-  spec.add_development_dependency 'pry-byebug'
 end
