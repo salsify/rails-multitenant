@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.18.0
+## 0.18.1
 * Fix issue where only direct dependencies of `Current` and `CurrentInstance` classes are cleared.
 
 ## 0.18.0
