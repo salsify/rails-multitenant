@@ -34,8 +34,9 @@ module RailsMultitenant
           current || raise("No current #{name} set")
         end
 
-        def clear_current!
+        def clear_current!(cleared = nil)
           GlobalContextRegistry.delete(current_registry_obj)
+          __clear_dependents!(cleared)
         end
 
         def as_current(object)
@@ -73,8 +74,13 @@ module RailsMultitenant
           end
         end
 
-        def __clear_dependents!
-          GlobalContextRegistry.send(:dependencies_for, __key_class).each(&:clear_current!)
+        def __clear_dependents!(initial_cleared = nil)
+          GlobalContextRegistry.send(:dependencies_for, __key_class).tap do |dependencies|
+            next unless dependencies.present?
+
+            (cleared = initial_cleared || []) << self
+            dependencies.each { |obj| obj.clear_current!(cleared) unless cleared.include?(obj) }
+          end
         end
 
         def __key_class

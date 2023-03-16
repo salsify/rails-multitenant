@@ -15,14 +15,33 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
   before do
     stub_const('SubClass', Class.new(TestClass))
     stub_const('DependentClass', dependent_class)
+    stub_const('CyclicallyDependentClass1', cyclically_dependent_class1)
+    stub_const('CyclicallyDependentClass2', cyclically_dependent_class2)
     stub_const('BiDependentClass', bidependent_class)
     stub_const('NoDefaultTestClass', no_default_test_class)
 
     DependentClass.global_context_dependent_on TestClass
+    DependentClass.global_context_dependent_on CyclicallyDependentClass2
+    CyclicallyDependentClass1.global_context_dependent_on DependentClass
+    CyclicallyDependentClass2.global_context_dependent_on CyclicallyDependentClass1
     BiDependentClass.global_context_mutually_dependent_on TestClass
   end
 
   let(:dependent_class) do
+    Class.new do
+      include RailsMultitenant::GlobalContextRegistry::Current
+      provide_default { new }
+    end
+  end
+
+  let(:cyclically_dependent_class1) do
+    Class.new do
+      include RailsMultitenant::GlobalContextRegistry::Current
+      provide_default { new }
+    end
+  end
+
+  let(:cyclically_dependent_class2) do
     Class.new do
       include RailsMultitenant::GlobalContextRegistry::Current
       provide_default { new }
@@ -73,8 +92,13 @@ describe RailsMultitenant::GlobalContextRegistry::Current do
 
     it "clears dependencies" do
       dependent = DependentClass.current
+      cyclically_dependent1 = CyclicallyDependentClass1.current
+      cyclically_dependent2 = CyclicallyDependentClass1.current
+
       TestClass.current = TestClass.new
-      expect(dependent_class.current).not_to equal(dependent)
+      expect(DependentClass.current).not_to equal(dependent)
+      expect(CyclicallyDependentClass1.current).not_to equal(cyclically_dependent1)
+      expect(CyclicallyDependentClass2.current).not_to equal(cyclically_dependent2)
     end
 
     it "clears bidirectional dependencies" do

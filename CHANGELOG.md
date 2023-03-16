@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.18.1
+* Fix issue where only direct dependencies of `Current` and `CurrentInstance` classes are cleared.
+
 ## 0.18.0
 * Add better support for registry dependencies in a development environment where classes may be reloaded.
 * Add a `global_context_mutually_dependent_on` method to support registering bidirectional references.
