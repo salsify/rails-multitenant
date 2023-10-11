@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.19.0
+* Rails 7.1 support
+
 ## 0.18.1
 * Fix issue where only direct dependencies of `Current` and `CurrentInstance` classes are cleared.
 
