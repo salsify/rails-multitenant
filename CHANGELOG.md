@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.0
+* Rails 7.1 support
+* Drop unsupported rails versions < 6.1
+* Drop unsupported ruby versions < 3.0
+
 ## 0.18.1
 * Fix issue where only direct dependencies of `Current` and `CurrentInstance` classes are cleared.
 
