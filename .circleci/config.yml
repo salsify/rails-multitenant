@@ -64,16 +64,16 @@ jobs:
 workflows:
   build:
     jobs:
-    - lint
-    - test:
-        matrix:
-          parameters:
-            gemfile:
-            - gemfiles/rails_6.1.gemfile
-            - gemfiles/rails_7.0.gemfile
-            - gemfiles/rails_7.1.gemfile
-            ruby_version:
-            - 3.0.6
-            - 3.1.4
-            - 3.2.2
-            - 3.3.0
+      - lint
+      - test:
+          matrix:
+            parameters:
+              gemfile:
+                - gemfiles/rails_6.1.gemfile
+                - gemfiles/rails_7.0.gemfile
+                - gemfiles/rails_7.1.gemfile
+              ruby_version:
+                - 3.0.6
+                - 3.1.4
+                - 3.2.2
+                - 3.3.0
