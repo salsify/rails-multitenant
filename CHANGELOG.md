@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.21.0
+- Allow use with future unknown Rails versions
+- Add support for Rails 8.0
+
+## 0.20.0
+* Rails 7.2 support
+* Drop unsupported rails version 6.1
+* Drop unsupported ruby 3.0
+
 ## 0.20.0
 * Rails 7.2 support
 * Drop unsupported rails version 6.1
