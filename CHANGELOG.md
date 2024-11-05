@@ -9,11 +9,6 @@
 * Drop unsupported rails version 6.1
 * Drop unsupported ruby 3.0
 
-## 0.20.0
-* Rails 7.2 support
-* Drop unsupported rails version 6.1
-* Drop unsupported ruby 3.0
-
 ## 0.19.0
 * Rails 7.1 support
 * Drop unsupported rails versions < 6.1
