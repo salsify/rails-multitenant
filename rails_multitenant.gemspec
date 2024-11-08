@@ -37,14 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec_junit_formatter'
   spec.add_development_dependency 'salsify_rubocop', '~> 1.27.1'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
-
-  # This is only used for testing. Since we the minimal version we support is
-  # ruby 3.1.x, we install sqlite 1.7 for that (which works for Rails 7.0, 7.1 and 7.2)
-  # Otherwise, we install Ruby 3.2, which we'll use for Rails 7.1, 7.2 and 8.0.
-  ruby_version = ENV['RUBY_VERSION']
-  if ruby_version.start_with?('3.1')
-    spec.add_development_dependency 'sqlite3', '~> 1.7.0'
-  else
-    spec.add_development_dependency 'sqlite3', '~> 2.1.0'
-  end
+  spec.add_development_dependency 'sqlite3', '~> 2.1'
 end
