@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 3.2'
 
-  spec.add_dependency 'activerecord', '>= 7.0', '< 7.1'
-  spec.add_dependency 'activesupport', '>= 7.0', '< 7.1'
+  spec.add_dependency 'activerecord', '>= 7.0'
+  spec.add_dependency 'activesupport', '>= 7.0'
 
   spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'coveralls'
@@ -37,5 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec_junit_formatter'
   spec.add_development_dependency 'salsify_rubocop', '~> 1.27.1'
   spec.add_development_dependency 'simplecov', '~> 0.15.1'
-  spec.add_development_dependency 'sqlite3', '~> 2.1.0'
+  # We can increase the sqlite3 major after we stop supporting Rails 7.0
+  spec.add_development_dependency 'sqlite3', '~> 1.7.3'
 end
