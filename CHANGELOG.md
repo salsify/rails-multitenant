@@ -1,7 +1,6 @@
 # Changelog
 
 ## 0.21.0
-- Allow use with future unknown Rails versions
 - Add support for Rails 8.0
 
 ## 0.20.0
