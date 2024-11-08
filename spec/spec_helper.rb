@@ -12,7 +12,6 @@ SimpleCov.start do
 end
 
 require 'active_record'
-ActiveRecord::Base.belongs_to_required_by_default = true if ActiveRecord::VERSION::MAJOR >= 5
 
 require 'logger'
 require 'database_cleaner'
