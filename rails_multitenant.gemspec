@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 3.1'
 
-  spec.add_dependency 'activerecord', '>= 7.0', '< 8.2'
-  spec.add_dependency 'activesupport', '>= 7.0', '< 8.2'
+  spec.add_dependency 'activerecord', '>= 7.2', '< 8.2'
+  spec.add_dependency 'activesupport', '>= 7.2', '< 8.2'
 
   spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'coveralls'
