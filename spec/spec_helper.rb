@@ -12,7 +12,6 @@ SimpleCov.start do
 end
 
 require 'active_record'
-
 require 'logger'
 require 'database_cleaner'
 require 'rails_multitenant'

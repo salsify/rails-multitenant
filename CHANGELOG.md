@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.22.0
+* Rails 8.1 support
+* Update ruby version to 3.4.7
+
 ## 0.21.0
 - Add support for Rails 8.0
 
